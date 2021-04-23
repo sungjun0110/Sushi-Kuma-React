@@ -15,8 +15,13 @@ import Com from '../menu-items/Eldorado/SushiCombo';
 import Ben from '../menu-items/Eldorado/Bento';
 
 import Cart from '../cart/Cart';
+import SushiCombo from '../menu-items/Roseville/SushiCombo';
 
 const EldoradoMenu = () => {
+  
+  console.log(3=='3');
+
+
   // categori name : page element
   const cateDict = {
     'Appetizer': <App />, 
@@ -54,7 +59,7 @@ const EldoradoMenu = () => {
         {categories}
       </div>
 
-      {/* <Cart></Cart> */}
+      <Cart></Cart>
 
       <Link to='/menu'>
         <button id='back-btn'>Back</button>
