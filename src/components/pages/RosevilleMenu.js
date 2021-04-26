@@ -51,7 +51,6 @@ const RosevilleMenu = () => {
           Roseville
         </h3>
       </div>
-{/*  */}
       <div className='menu-div'>
         <div className='warning'>
           <p>*Consuming raw or undercooked meats, poultry, seafood, shellfish, or eggs may increase your risk of foodborne illness.

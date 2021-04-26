@@ -125,7 +125,7 @@ const Rolls = () => {
       <div className="items">
         <div className="item">
           <h4>California Hand Roll </h4>
-          <p>crab meat, avocado<br /></p>
+          <p>crab meat, avocado<br />8.50</p>
         </div>
 
         <div className="item">
