@@ -1,57 +1,25 @@
 import React from 'react';
+import Item from '../Content';
 
 const SushiCombo = () => {
   return(
-    <>
-    <div className="item-title">Sushi & Sashimi Combination</div>
-    <p>Served with soup & salad</p>
-    <div className="items">
-      <div className="item">
-        <h4>Sushi-7</h4>
-        <p>7 pcs chef’s choice nigiri sushi & california roll<br />20.50</p>
-      </div>
+    <div className="item-div">
+      <div className="item-title">Sushi & Sashimi Combination</div>
 
-      <div className="item">
-        <h4>Sushi-9</h4>
-        <p>9 pcs chef’s choice nigiri sushi & california roll<br />24.50</p>
-      </div>
-
-      <div className="item">
-        <h4>Sushi & Sashimi - Lunch</h4>
-        <p>3 pcs - sushi, 3 pcs - sashimi & California roll<br />15.50</p>
-      </div>
-
-      <div className="item">
-        <h4>Sushi & Sashimi - Dinner</h4>
-        <p>5 pcs- sushi, 4 pcs- sashimi & california roll<br />20.95</p>
-      </div>
-
-      <div className="item">
-        <h4>Chirashi Lunch</h4>
-        <p>12 pcs chef’s choice of sliced raw fish & served with sushi rice<br />20.95</p>
-      </div>
-
-      <div className="item">
-        <h4>Chirashi Dinner</h4>
-        <p>16 pcs chef’s choice of sliced raw fish & served with sushi rice<br />25.95</p>
-      </div>
-
-      <div className="item">
-        <h4>Sashimi Lunch</h4>
-        <p>12 pcs chef’s choice of sliced raw fish & served with steamed rice<br />20.95</p>
-      </div>
-
-      <div className="item">
-        <h4>Sashimi Dinner</h4>
-        <p>16 pcs chef’s choice of sliced raw fish & served with steamed rice<br />25.95</p>
-      </div>
-
-      <div className="item">
-        <h4>Sashimi Deluxe</h4>
-        <p>25 pcs chef’s choice of sliced raw fish<br />36.95</p>
+      <p style={{color:"#ddd"}}>Served with soup & salad</p>
+      
+      <div className="items">
+        <Item itemName="Sushi-7" description="7 pcs chef’s choice nigiri sushi & california roll" price="20.50" />
+        <Item itemName="Sushi-9" description="9 pcs chef’s choice nigiri sushi & california roll" price="24.50" />
+        <Item itemName="Sushi & Sashimi - Lunch" description="3 pcs - sushi, 3 pcs - sashimi & California roll" price="15.50" />
+        <Item itemName="Sushi & Sashimi - Dinner" description="5 pcs- sushi, 4 pcs- sashimi & california roll" price="20.95" />
+        <Item itemName="Chirashi Lunch" description="12 pcs chef’s choice of sliced raw fish & served with sushi rice" price="20.95" />
+        <Item itemName="Chirashi Dinner" description="16 pcs chef’s choice of sliced raw fish & served with sushi rice" price="25.95" />
+        <Item itemName="Sashimi Lunch" description="12 pcs chef’s choice of sliced raw fish & served with steamed rice" price="20.95" />
+        <Item itemName="Sashimi Dinner" description="16 pcs chef’s choice of sliced raw fish & served with steamed rice" price="25.95" />
+        <Item itemName="Sashimi Deluxe" description="25 pcs chef’s choice of sliced raw fish" price="36.95" />
       </div>
     </div>
-    </>
   );
 }
 

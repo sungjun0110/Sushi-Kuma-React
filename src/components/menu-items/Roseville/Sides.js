@@ -1,23 +1,15 @@
 import React from 'react';
+import Item from '../Content';
 
 const Sides = () => {
   return(
     <>
-    <div className="item-title"></div>
-    <div className="items">
-      <div className="item">
-        <h4>Miso Soup</h4>
-        <p>2.00</p>
-      </div>
-
-      <div className="item">
-        <h4>Bowl of Steamed Rice</h4>
-        <p>2.00</p>
-      </div>
-
-      <div className="item">
-        <h4>Bowl of Sushi Rice</h4>
-        <p>2.00</p>
+    <div className="item-div">
+      <div className="item-title"></div>
+      <div className="items">
+        <Item itemName="Miso Soup" description="" price="2.00" />
+        <Item itemName="Bowl of Steamed Rice" description="" price="2.00" />
+        <Item itemName="Bowl of Sushi Rice" description="" price="2.00" />
       </div>
     </div>
     </>

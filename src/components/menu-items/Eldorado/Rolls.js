@@ -1,174 +1,54 @@
 import React from 'react';
+import Item from '../Content';
 
 const Rolls = () => {
   return(
-    <>
-    <div className="discount">Every Roll <span style={{color: '#bf1a04', fontWeight: 'bold'}}>50% OFF!</span></div>
+    <div className="item-div">
+      <div className="discount">Every Roll <span style={{color: '#bf1a04', fontWeight: 'bold'}}>50% OFF!</span></div>
 
-    <div className="item-title">Vegetable Roll</div>
-    <div className="items">
-      <div className="item">
-        <h4>Asparagus Roll</h4>
-        <p>asparagus<br />8.50</p>
+      <div className="item-title">Vegetable Roll</div>
+      <div className="items">
+        <Item itemName="Asparagus Roll" description="asparagus" price="8.50" />
+        <Item itemName="Avokyu Roll" description="avocado, cucumber" price="8.99" />
+        <Item itemName="Avocado Maki" description="avocado" price="8.50" />
+        <Item itemName="Futomaki" description="egg, cucumber, oshinko, kampyo, yamagobo" price="8.50" />
+        <Item itemName="Kampyo Maki" description="squash" price="8.50" />
+        <Item itemName="Kappa Maki" description="cucumber" price="8.50" />
+        <Item itemName="Oshinko Maki" description="pickled radish" price="8.50" />
+        <Item itemName="Texas Roll" description="deep-fried jalapeno, avocado, cream cheese" price="9.99" />
       </div>
 
-      <div className="item">
-        <h4>Avokyu Roll</h4>
-        <p>Avocado, cucumber<br />8.99</p>
+      <div className="item-title">Beginner's Roll</div>
+      <div className="items">
+        <Item itemName="Alaskan Roll" description="salmon, avocado" price="9.99" />
+        <Item itemName="California Roll" description="crab meat, avocado" price="8.99" />
+        <Item itemName="Ebi Maki" description="cooked shrimp" price="8.99" />
+        <Item itemName="Negi Hama" description="yellowtail, green onion" price="8.99" />
+        <Item itemName="New York Roll" description="shrimp, avocado" price="9.99" />
+        <Item itemName="Ocean Roll" description="yellowtail, avocado" price="9.99" />
+        <Item itemName="Pacific Roll" description="tuna, avocado" price="9.99" />
+        <Item itemName="Philly Roll" description="salmon, cream cheese, avocado" price="9.99" />
+        <Item itemName="Rock'N'Roll" description="eel, avocado" price="9.99" />
+        <Item itemName="Sake Maki" description="salmon" price="8.99" />
+        <Item itemName="Salmon Skin Roll" description="salmon skin, cucumber" price="9.99" />
+        <Item itemName="Spicy California" description="spicy crabmeat, avocado" price="8.99" />
+        <Item itemName="Spicy Tuna Roll" description="spicy tuna, cucumber" price="9.99" />
+        <Item itemName="Tekka Maki" description="tuna" price="8.99" />
       </div>
 
-      <div className="item">
-        <h4>Avocado Make</h4>
-        <p>avocado<br />8.50</p>
-      </div>
-
-      <div className="item">
-        <h4>Futomaki</h4>
-        <p>egg, cucumber, oshinko, kampyo, yamagobo<br />8.50</p>
-      </div>
-
-      <div className="item">
-        <h4>Kampyo Make</h4>
-        <p>squash<br />8.50</p>
-      </div>
-
-      <div className="item">
-        <h4>Kappa Maki</h4>
-        <p>cucumber<br />8.50</p>
-      </div>
-
-      <div className="item">
-        <h4>Oshinko Make</h4>
-        <p>pickled radish<br />8.50</p>
-      </div>
-
-      <div className="item">
-        <h4>Texas Roll</h4>
-        <p>deep-fried jalapeno, avocado, cream cheese<br />9.99</p>
-      </div>
-    </div>
-
-    <div className="item-title">Beginner's Roll</div>
-    <div className="items">
-      <div className="item">
-        <h4>Alaskan Roll</h4>
-        <p>salmon, avocado<br />9.99</p>
-      </div>
-
-      <div className="item">
-        <h4>California Roll</h4>
-        <p>crab meat, avocado<br />8.99</p>
-      </div>
-
-      <div className="item">
-        <h4>Ebi Maki</h4>
-        <p>cooked shrimp<br />8.99</p>
-      </div>
-
-      <div className="item">
-        <h4>Negi Hama</h4>
-        <p>yellowtail, green onion<br />8.99</p>
-      </div>
-
-      <div className="item">
-        <h4>New York Roll</h4>
-        <p>shrimp, avocado<br />9.99</p>
-      </div>
-
-      <div className="item">
-        <h4>Ocean Roll</h4>
-        <p>yellowtail, avocado<br />9.99</p>
-      </div>
-
-      <div className="item">
-        <h4>Pacific Roll</h4>
-        <p>tuna, avocado<br />9.99</p>
-      </div>
-
-      <div className="item">
-        <h4>Philly Roll</h4>
-        <p>salmon, cream cheese, avocado<br />9.99</p>
-      </div>
-
-      <div className="item">
-        <h4>Rock'N'Roll</h4>
-        <p>eel, avocado<br />9.99</p>
-      </div>
-
-      <div className="item">
-        <h4>Sake Maki</h4>
-        <p>salmon<br />8.99</p>
-      </div>
-
-      <div className="item">
-        <h4>Salmon Skin Roll</h4>
-        <p>salmon skin, cucumber<br />9.99</p>
-      </div>
-
-      <div className="item">
-        <h4>Spicy California</h4>
-        <p>spicy crabmeat, avocado<br />8.99</p>
-      </div>
-
-      <div className="item">
-        <h4>Spicy Tuna Roll</h4>
-        <p>spicy tuna, cucumber<br />9.99</p>
-      </div>
-
-      <div className="item">
-        <h4>Tekka Maki</h4>
-        <p>tuna<br />8.99</p>
+      <div className="item-title">Temaki - Hand Roll</div>
+      <div className="items">
+        <Item itemName="California Hand Roll" description="crab meat, avocado" price="8.50" />
+        <Item itemName="Tempura Hand Roll" description="shrimp tempura, avocado, crabmeat" price="8.50" />
+        <Item itemName="Spicy Tuna Hand Roll" description="spicy tuna, cucumber" price="8.99" />
+        <Item itemName="Unagi Hand Roll" description="eel, cucumber" price="8.99" />
+        <Item itemName="Fish Hand Roll" description="your choice of salmon, tuna, albacore, or yellow tail" price="8.99" />
+        <Item itemName="Chop Hotate Hand Roll" description="Spicy scallop" price="8.99" />
+        <Item itemName="Salmon Skin Hand Roll" description="salmon skin, cucumber" price="8.99" />
+        <Item itemName="Spider Hand Roll" description="deep-fried softshell crab" price="8.99" />
+        <Item itemName="ZigZag Hand Roll" description="deep-friedsoftshell crab,soy wrap" price="8.99" />
       </div>
     </div>
-
-    <div className="item-title">Temaki - Hand Roll</div>
-    <div className="items">
-      <div className="item">
-        <h4>California Hand Roll </h4>
-        <p>crab meat, avocado<br /></p>
-      </div>
-
-      <div className="item">
-        <h4>Tempura Hand Roll</h4>
-        <p>shrimp tempura, avocado, crabmeat<br />8.50</p>
-      </div>
-
-      <div className="item">
-        <h4>Spicy Tuna Hand Roll</h4>
-        <p>spicy tuna, cucumber<br />8.99</p>
-      </div>
-
-      <div className="item">
-        <h4>Unagi Hand Roll</h4>
-        <p>eel, cucumber<br />8.99</p>
-      </div>
-
-      <div className="item">
-        <h4>Fish Hand Roll</h4>
-        <p>your choice of salmon, tuna, albacore, or yellow tail<br />8.99</p>
-      </div>
-
-      <div className="item">
-        <h4>Chop Hotate Hand Roll</h4>
-        <p>Spicy scallop<br />8.99</p>
-      </div>
-
-      <div className="item">
-        <h4>Salmon Skin Hand Roll</h4>
-        <p>salmon skin, cucumber<br />8.99</p>
-      </div>
-
-      <div className="item">
-        <h4>Spider Hand Roll</h4>
-        <p>Deep-fried softshell crab<br />8.99</p>
-      </div>
-
-      <div className="item">
-        <h4>ZigZag Hand Roll</h4>
-        <p>deep-friedsoftshell crab,soy wrap<br />8.99</p>
-      </div>
-    </div>
-    </>
   );
 }
 

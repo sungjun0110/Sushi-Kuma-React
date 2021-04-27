@@ -12,13 +12,21 @@ import Roll from '../menu-items/Eldorado/Rolls';
 import Side from '../menu-items/Eldorado/Sides';
 import Spe from '../menu-items/Eldorado/SpecialRolls';
 import Com from '../menu-items/Eldorado/SushiCombo';
+import Ben from '../menu-items/Eldorado/Bento';
 
+import Cart from '../cart/Cart';
+import SushiCombo from '../menu-items/Roseville/SushiCombo';
 
 const EldoradoMenu = () => {
+  
+  console.log(3=='3');
+
+
   // categori name : page element
   const cateDict = {
     'Appetizer': <App />, 
     'Nigiri': <Nigi />, 
+    'Kuma Bento Box': <Ben />, 
     'Entrée': <Ent />, 
     "Kids' Menu": <Kid />, 
     'Sushi & Sashimi Combo': <Com />, 
@@ -27,6 +35,7 @@ const EldoradoMenu = () => {
     'Side': <Side />, 
     'Alcoholic Beverage': <Bev />, 
     'Beverage & Dessert': <Des />, 
+    
   }
 
   const categories = [];
@@ -39,7 +48,7 @@ const EldoradoMenu = () => {
     <>
       <div id='title'>
         <h3>
-          El Droado Hills
+          El Dorado Hills
         </h3>
       </div>
 
@@ -49,6 +58,8 @@ const EldoradoMenu = () => {
         </div>
         {categories}
       </div>
+
+      <Cart></Cart>
 
       <Link to='/menu'>
         <button id='back-btn'>Back</button>

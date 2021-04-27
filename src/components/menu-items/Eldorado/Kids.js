@@ -1,24 +1,17 @@
 import React from 'react';
+import Item from '../Content';
 
 const Kids = () => {
   return(
-    <>
-    <div className="item-title"></div>
-    <div className="items">
-      <div className="item">
-        <h4>Teddy Bear 1</h4>
-        <p>Chicken teriyaki or Sesame chicken, California roll – 4pcs, gyoza - 2pcs<br />9.95</p>
-      </div>
-      <div className="item">
-        <h4>Teddy Bear 2</h4>
-        <p>Mixed tempura, California roll – 4pcs, gyoza - 2pcs<br />9.95</p>
-      </div>
-      <div className="item">
-        <h4>Teddy Bear 3</h4>
-        <p>Chicken Katsu or Ton Katsu, California – 4pcs, gyoza - 2pcs<br />9.95</p>
+    <div className="item-div">
+      <div className="item-title">Kids' Menu</div>
+      
+      <div className="items">
+        <Item itemName="Teddy Bear 1" description="Chicken teriyaki or Sesame chicken, California roll – 4pcs, gyoza - 2pcs" price="9.95" />
+        <Item itemName="Teddy Bear 2" description="Mixed tempura, California roll – 4pcs, gyoza - 2pcs" price="9.95" />
+        <Item itemName="Teddy Bear 3" description="Chicken Katsu or Ton Katsu, California – 4pcs, gyoza - 2pcs" price="9.95" />
       </div>
     </div>
-    </>
   );
 }
 
