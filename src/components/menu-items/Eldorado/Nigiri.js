@@ -1,37 +1,37 @@
 import React from 'react';
-import Item from '../Content';
+import CreateItems from '../CreateItems';
 
-const Nigiri = () => {
+const Nigiri = ( props ) => {
   return(
     <div className="item-div">
-      <div className="item-title">Nigiri</div>
-
-      <div className="nigiri-warning">
-        <p>* Extra order: Uzura (Quail Egg).....1.50 *</p>
-      </div>
-      
-      <div className="items">
-        <Item itemName="Albacore" description="white tuna" price="5.95" />
-        <Item itemName="Ama-Ebi" description="sweet shrimp" price="7.50" />
-        <Item itemName="Ebi" description="cooked shrimp" price="4.50" />
-        <Item itemName="Escolar" description="escolar" price="5.95" />
-        <Item itemName="Hamachi" description="yellow tail" price="5.95" />
-        <Item itemName="Hokkigai" description="surf clam" price="5.95" />
-        <Item itemName="Hotate" description="scallop" price="5.95" />
-        <Item itemName="Ika" description="squid" price="4.50" />
-        <Item itemName="Ikura" description="salmon roe" price="5.50" />
-        <Item itemName="Inari" description="tofu wrap" price="4.50" />
-        <Item itemName="Kani" description="snow crab" price="7.95" />
-        <Item itemName="Maguro" description="tuna" price="5.95" />
-        <Item itemName="Masago" description="smelt roe" price="4.95" />
-        <Item itemName="Saba" description="mackerel" price="4.95" />
-        <Item itemName="Sake" description="salmon" price="5.95" />
-        <Item itemName="Spicy Hotate" description="spicy scallop" price="5.95" />
-        <Item itemName="Tako" description="octopus" price="4.95" />
-        <Item itemName="Tamago" description="sweet egg" price="4.50" />
-        <Item itemName="Tobiko" description="flying fish roe" price="5.95" />
-        <Item itemName="Unagi" description="fresh water eel" price="5.95" />
-      </div>
+      {CreateItems(
+        "Nigiri", 
+        {
+          "Albacore" : ["white tuna", "5.95"], 
+          "Ama-Ebi" : ["sweet shrimp", "7.50"], 
+          "Ebi" : ["cooked shrimp", "4.50"], 
+          "Escolar" : ["escolar", "5.95"], 
+          "Hamachi" : ["yellow tail", "5.95"], 
+          "Hokkigai" : ["surf clam", "5.95"], 
+          "Hotate" : ["scallop", "5.95"], 
+          "Ika" : ["squid", "4.50"], 
+          "Ikura" : ["salmon roe", "5.50"], 
+          "Inari" : ["tofu wrap", "4.50"], 
+          "Kani" : ["snow crab", "7.95"], 
+          "Maguro" : ["tuna", "5.95"], 
+          "Masago" : ["smelt roe", "4.95"], 
+          "Saba" : ["mackerel", "4.95"], 
+          "Sake" : ["salmon", "5.95"], 
+          "Spicy Hotate" : ["spicy scallop", "5.95"], 
+          "Tako" : ["octopus", "4.95"], 
+          "Tamago" : ["sweet egg", "4.50"], 
+          "Tobiko" : ["flying fish roe", "5.95"], 
+          "Unagi" : ["fresh water eel", "5.95"], 
+        }, props.cartItem)}
+        
+        <div className="nigiri-warning">
+          <p>* Extra order: Uzura (Quail Egg).....1.50 *</p>
+        </div>
     </div>
   );
 }

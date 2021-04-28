@@ -1,42 +1,43 @@
 import React from 'react';
-import Item from '../Content';
+import CreateItems from '../CreateItems';
 
-const Entree = () => {
+const Entree = ( props ) => {
   return(
-    <>
     <div className='item-div'>
-      <div className="item-title">NOODLE SOUP</div>
-      <div className="items">
-        <Item itemName="Veggie Udon" description="thick noodle soup with vegetable" price="L 10.95 | D 13.95" />
-        <Item itemName="Beef Udon" description="thick noodle soup with beef & vegetable" price="L 12.95 | D 15.95" />
-        <Item itemName="Nabe Udon" description="thick noodle soup with shrimp tempura, chicken, vegetable" price="L 12.95 | D 15.95" />
-        <Item itemName="Tempura Udon" description="thick noodle soup with vegetable & mixed tempura on the side" price="L 12.95 | D 15.95" />
-        <Item itemName="Seafood Udon" description="thick noodle soup with assorted seafood & vegetable" price="L 12.95 | D 15.95" />
-      </div>
+        {CreateItems(
+          "Noodle Soup", 
+          {
+          "Veggie Udon" : ["thick noodle soup with vegetable", "L 10.95 | D 13.95"], 
+          "Beef Udon" : ["thick noodle soup with beef & vegetable", "L 12.95 | D 15.95"], 
+          "Nabe Udon" : ["thick noodle soup with shrimp tempura, chicken, vegetable", "L 12.95 | D 15.95"], 
+          "Tempura Udon" : ["thick noodle soup with vegetable & mixed tempura on the side", "L 12.95 | D 15.95"], 
+          "Seafood Udon" : ["thick noodle soup with assorted seafood & vegetable", "L 12.95 | D 15.95"], 
+        }, props.cartItem)}
 
-      <div className="item-title">KUMA SINGLE ENTRÉE</div>
-      <div className="items">
-        <Item itemName="Chicken Teriyaki" description="Grilled chicken with teriyaki sauce" price="L 11.95 | D 16.95" />
-        <Item itemName="Salmon Teriyaki" description="Grilled salmon steak with teriyaki sauce" price="L 12.95 | D 17.95" />
-        <Item itemName="Beef Teriyaki" description="Grilled beef steak with teriyaki sauce" price="L 12.95 | D 17.95" />
-        <Item itemName="Saba Shioyaki" description="lightly salted and Grilled mackerel fillet" price="L 11.95 | D 16.95" />
-        <Item itemName="Vegetable Tempura" description="Assorted seasonal vegetable | Lunch - 7pcs | Dinner – 9pcs" price="L 10.95 | D 15.95" />
-        <Item itemName="Shrimp Tempura" description="Shrimp - Lunch - 5pcs, Dinner - 7 pcs" price="L 12.95 | D 17.95" />
-        <Item itemName="Mixed Tempura" description="Shrimp - Lunch - 3 pcs, Dinner – 4 pcs | Vegetable – Lunch - 5 pcs, Dinner – 7 pcs" price="L 12.95 | D 17.95" />
-        <Item itemName="Chicken Katsu" description="Panko fried chicken breast cutlets with katsu sauce" price="L 11.95 | D 16.95" />
-        <Item itemName="Ton Katsu" description="Panko fried pork loin cutlets with katsu sauce" price="L 11.95 | D 16.95" />
-        <Item itemName="Sesame Chicken" description="Tempura fried chicken breast with teriyaki sesame sauce" price="L 11.95 | D 16.95" />
-      </div>
+        {CreateItems(
+          "Kuma Single Entrée", 
+          {
+          "Chicken Teriyaki" : ["Grilled chicken with teriyaki sauce", "L 11.95 | D 16.95"], 
+          "Salmon Teriyaki" : ["Grilled salmon steak with teriyaki sauce", "L 12.95 | D 17.95"], 
+          "Beef Teriyaki" : ["Grilled beef steak with teriyaki sauce", "L 12.95 | D 17.95"], 
+          "Saba Shioyaki" : ["lightly salted and Grilled mackerel fillet", "L 11.95 | D 16.95"], 
+          "Vegetable Tempura" : ["Assorted seasonal vegetable | Lunch - 7pcs | Dinner – 9pcs", "L 10.95 | D 15.95"], 
+          "Shrimp Tempura" : ["Shrimp - Lunch - 5pcs, Dinner - 7 pcs", "L 12.95 | D 17.95"], 
+          "Mixed Tempura" : ["Shrimp - Lunch - 3 pcs, Dinner – 4 pcs | Vegetable – Lunch - 5 pcs, Dinner – 7 pcs", "L 12.95 | D 17.95"], 
+          "Chicken Katsu" : ["Panko fried chicken breast cutlets with katsu sauce", "L 11.95 | D 16.95"], 
+          "Ton Katsu" : ["Panko fried pork loin cutlets with katsu sauce", "L 11.95 | D 16.95"], 
+          "Sesame Chicken" : ["Tempura fried chicken breast with teriyaki sesame sauce", "L 11.95 | D 16.95"], 
+        }, props.cartItem)}
 
-      <div className="item-title">Bowl Special</div>
-      <div className="items">
-        <Item itemName="Ton Katsu" description="Panko fried Pork loin with katsu sauce over rice" price="L 9.95 | D 12.95" />
-        <Item itemName="Chicken Katsu" description="Panko fried chicken breast cutlets with katsu sauce over rice" price="L 9.95 | D 12.95" />
-        <Item itemName="Chicken Teriyaki" description="Grilled chicken with teriyaki sauce over rice" price="L 9.95 | D 12.95" />
-        <Item itemName="Sesame Chicken" description="Tempura fried chicken breast with teriyaki sesame sauce over rice" price="L 9.95 | D 12.95" />
-      </div>
+        {CreateItems(
+          "Bowl Special", 
+          {
+          "Ton Katsu" : ["Panko fried Pork loin with katsu sauce over rice", "L 9.95 | D 12.95"], 
+          "Chicken Katsu" : ["Panko fried chicken breast cutlets with katsu sauce over rice", "L 9.95 | D 12.95"], 
+          "Chicken Teriyaki" : ["Grilled chicken with teriyaki sauce over rice", "L 9.95 | D 12.95"], 
+          "Sesame Chicken" : ["Tempura fried chicken breast with teriyaki sesame sauce over rice", "L 9.95 | D 12.95"], 
+        }, props.cartItem)}
     </div>
-    </>
   );
 }
 

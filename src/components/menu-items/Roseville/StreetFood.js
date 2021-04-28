@@ -1,27 +1,26 @@
 import React from 'react';
-import Item from '../Content';
+import CreateItems from '../CreateItems';
 
-const StreetFood = () => {
+const StreetFood = ( props ) => {
   return (
-    <>
     <div className="item-div">
-      <div className="item-title">Street Foods</div>
-      <div className="items">
-        <Item itemName="Bulgogi Tacos" description="marinated Korean style beef, white/red cabbage, cilantro (3pcs)" price="13.95" />
-        <Item itemName="Ahi Poke Tacos" description="seared ahi tuna, avocado, cilantro, white/red cabbage, sesame oil, special sauce (3pcs)" price="13.95" />
-        <Item itemName="Zig Zag Tacos" description="crispy soft shell crab, avocado, white/red cabbage, cilantro, zig zag sauce (3pcs)" price="12.95" />
-        <Item itemName="Vegetable Bibimbap" description="rice, seasonal vegetable, vinaigrette, sesame oil, Korean hot sauce/with miso soup" price="11.95" />
-        <Item itemName="Bulgogi Bibimbap" description="rice, marinated beef, seasonal vegetable, sesame oil, Korean hot sauce / with miso soup" price="13.95" />
-        <Item itemName="Tofu Bibimbap" description="rice, seasonal vegetable, tofu, vinaigrette, Korean hot sauce / with miso soup" price="12.95" />
-        <Item itemName="Vegetable Tempura Donburi" description="assorted seasonal vegetables - 9pcs" price="12.95" />
-        <Item itemName="Tempura Donburi" description="shrimp - 3pcs and assorted seasonal vegetables - 7pcs" price="14.95" />
-        <Item itemName="Unagi Donburi" description="grilled eel over steamed rice with seaweed salad, vinaigrette, unagi sauce sesame seeds" price="21.95" />
-        <Item itemName="Bulgogi Donburi" description="marinated Korean style beef over steamed rice" price="15.95" />
-        <Item itemName="Sake Donburi" description="slices of raw salmon over steamed rice with seaweed salad vinaigrette, masago" price="21.95" />
-        <Item itemName="Tekka Donburi" description="slices of raw tuna over steamed rice" price="21.95" />
-      </div>
+      {CreateItems(
+        "Street Foods", 
+        {
+        "Bulgogi Tacos" : ["marinated Korean style beef, white/red cabbage, cilantro (3pcs)", "13.95"], 
+        "Ahi Poke Tacos" : ["seared ahi tuna, avocado, cilantro, white/red cabbage, sesame oil, special sauce (3pcs)", "13.95"], 
+        "Zig Zag Tacos" : ["crispy soft shell crab, avocado, white/red cabbage, cilantro, zig zag sauce (3pcs)", "12.95"], 
+        "Vegetable Bibimbap" : ["rice, seasonal vegetable, vinaigrette, sesame oil, Korean hot sauce/with miso soup", "11.95"], 
+        "Bulgogi Bibimbap" : ["rice, marinated beef, seasonal vegetable, sesame oil, Korean hot sauce / with miso soup", "13.95"], 
+        "Tofu Bibimbap" : ["rice, seasonal vegetable, tofu, vinaigrette, Korean hot sauce / with miso soup", "12.95"], 
+        "Vegetable Tempura Donburi" : ["assorted seasonal vegetables - 9pcs", "12.95"], 
+        "Tempura Donburi" : ["shrimp - 3pcs and assorted seasonal vegetables - 7pcs", "14.95"], 
+        "Unagi Donburi" : ["grilled eel over steamed rice with seaweed salad, vinaigrette, unagi sauce sesame seeds", "21.95"], 
+        "Bulgogi Donburi" : ["marinated Korean style beef over steamed rice", "15.95"], 
+        "Sake Donburi" : ["slices of raw salmon over steamed rice with seaweed salad vinaigrette, masago", "21.95"], 
+        "Tekka Donburi" : ["slices of raw tuna over steamed rice", "21.95"], 
+      }, props.cartItem)}
     </div>
-    </>
   )
 }
 

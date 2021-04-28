@@ -15,26 +15,23 @@ import Com from '../menu-items/Eldorado/SushiCombo';
 import Ben from '../menu-items/Eldorado/Bento';
 
 import Cart from '../cart/Cart';
-import SushiCombo from '../menu-items/Roseville/SushiCombo';
 
 const EldoradoMenu = () => {
-  
-  console.log(3=='3');
-
+  const [selectedItems, setSelectedItems] = useState([]);
 
   // categori name : page element
   const cateDict = {
-    'Appetizer': <App />, 
-    'Nigiri': <Nigi />, 
-    'Kuma Bento Box': <Ben />, 
-    'Entrée': <Ent />, 
-    "Kids' Menu": <Kid />, 
-    'Sushi & Sashimi Combo': <Com />, 
-    'Rolls': <Roll />, 
-    'Kuma Special Rolls': <Spe />, 
-    'Side': <Side />, 
-    'Alcoholic Beverage': <Bev />, 
-    'Beverage & Dessert': <Des />, 
+    'Appetizer': <App cartItem={setSelectedItems} />, 
+    'Nigiri': <Nigi cartItem={setSelectedItems} />, 
+    'Kuma Bento Box': <Ben cartItem={setSelectedItems} />, 
+    'Entrée': <Ent cartItem={setSelectedItems} />, 
+    "Kids' Menu": <Kid cartItem={setSelectedItems} />, 
+    'Sushi & Sashimi Combo': <Com cartItem={setSelectedItems} />, 
+    'Rolls': <Roll cartItem={setSelectedItems} />, 
+    'Kuma Special Rolls': <Spe cartItem={setSelectedItems} />, 
+    'Side': <Side cartItem={setSelectedItems} />, 
+    'Alcoholic Beverage': <Bev cartItem={setSelectedItems} />, 
+    'Beverage & Dessert': <Des cartItem={setSelectedItems} />, 
     
   }
 
@@ -59,7 +56,7 @@ const EldoradoMenu = () => {
         {categories}
       </div>
 
-      <Cart></Cart>
+      <Cart cartItem={setSelectedItems} ></Cart>
 
       <Link to='/menu'>
         <button id='back-btn'>Back</button>

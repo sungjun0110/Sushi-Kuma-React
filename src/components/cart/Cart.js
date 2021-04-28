@@ -2,14 +2,12 @@ import React, { useEffect, useState } from 'react';
 import './Cart.css';
 import { ReactComponent as Note } from './notes.svg';
 
-const Cart = () => {
+const Cart = ( props ) => {
     const [isClicked, setIsClicked] = useState(false);
 
     function clickHandler () {
-        if (isClicked == false) setIsClicked(true);
+        if (isClicked === false) setIsClicked(true);
         else setIsClicked(false);
-        
-
     }
 
     return (

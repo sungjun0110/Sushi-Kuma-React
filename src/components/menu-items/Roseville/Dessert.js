@@ -1,24 +1,24 @@
 import React from 'react';
-import Item from  '../Content';
+import CreateItems from  '../CreateItems';
 
-const Dessert = () => {
+const Dessert = ( props ) => {
   return(
-    <>
     <div className="item-div">
-      <div className="item-title"></div>
-      <div className="items">
-        <Item itemName="Soda" description="Coke, Diet Coke, Mr.pibb, Lemonade, Fanta, Sprite" price="2.50" />
-        <Item itemName="Ramune" description="Japanese marble soda" price="2.99" />
-        <Item itemName="Fruit Juice" description="Apple, Orange" price="2.50" />
-        <Item itemName="Sparkling Water" description="s. Pellegrino" price="2.50" />
-        <Item itemName="Iced Tea" description="" price="2.50" />
-        <Item itemName="Green Iced Tea" description="" price="2.50" />
-        <Item itemName="Hot Tea" description="Genmai" price="1.00" />
-        <Item itemName="Mochi Ice cream" description="strawberry, chocolate, mango" price="3.99" />
-      </div>
-    
+        {CreateItems(
+          "Dessert", 
+          {
+          "Soda" : ["Coke, Diet Coke, Mr.pibb, Lemonade, Fanta, Sprite", "2.50"], 
+          "Ramune" : ["Japanese marble soda", "2.99"], 
+          "Fruit Juice" : ["Apple, Orange", "2.50"], 
+          "Sparkling Water" : ["s. Pellegrino", "2.50"], 
+          "Iced Tea" : ["", "2.50"], 
+          "Green Iced Tea" : ["", "2.50"], 
+          "Hot Tea" : ["Genmai", "1.00"], 
+          "Mochi Ice cream" : ["strawberry, chocolate, mango", "3.99"], 
+          }, 
+          props.cartItem
+        )}
     </div>
-    </>
   );
 }
 
