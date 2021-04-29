@@ -8,6 +8,7 @@ const Cart = ( props ) => {
     function clickHandler () {
         if (isClicked === false) setIsClicked(true);
         else setIsClicked(false);
+
     }
 
     return (

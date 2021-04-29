@@ -1,6 +1,4 @@
 import React from 'react';
-import Item from  '../Content';
-
 
 const Bento = () => {
     return (

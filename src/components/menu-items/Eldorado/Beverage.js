@@ -16,7 +16,6 @@ const Beverage = ( props ) => {
           "Sake Bomb" : ["Sake & Sapporo Draft Beer", "3.50"],  
           "Oyster Shooter" : ["", "3.95"], 
         }, props.cartItem)}
-
       <div className="corkage" style={{marginTop: "20px", color: "#ddd"}}>*** Corkage Fee - 10.00 ***</div>
     </div>
   );
