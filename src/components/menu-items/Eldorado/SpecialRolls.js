@@ -24,7 +24,7 @@ const SpecialRolls = () => {
       <div className="item">
         <h4>Red Bull </h4>
         <p>deep-fried Shrimp, cream cheese | spicy crab meat, masago | special sauce | Soy wrap<br />16.99</p>
-      </div>
+      </div> 
 
       <div className="item">
         <h4>Spider</h4>
