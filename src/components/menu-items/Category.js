@@ -1,10 +1,8 @@
 import React, { setState, useState, useEffect } from 'react';
-import { useTransition, animate } from 'react-spring';
-import Content from './Content';
 
 
 const clickHandler = ( names, setIsMenuActive ) => {
-  if (names[0] == 'menu-category') {
+  if (names[0] === 'menu-category') {
     names[1]('menu-category active');
     setIsMenuActive(true);
   } else {

@@ -1,26 +1,17 @@
 import React from 'react';
+import CreateItems from '../CreateItems';
 
-const Sides = () => {
+const Sides = ( props ) => {
   return(
-    <>
-    <div className="item-title"></div>
-    <div className="items">
-      <div className="item">
-        <h4>Miso Soup</h4>
-        <p>2.00</p>
-      </div>
-
-      <div className="item">
-        <h4>Bowl of Steamed Rice</h4>
-        <p>2.00</p>
-      </div>
-
-      <div className="item">
-        <h4>Bowl of Sushi Rice</h4>
-        <p>2.00</p>
-      </div>
+    <div className="item-div">
+        {CreateItems(
+          "Side", 
+          {
+          "Miso Soup" : ["", "2.00"], 
+          "Bowl of Steamed Rice" : ["", "2.00"], 
+          "Bowl of Sushi Rice" : ["", "2.00"], 
+        }, props.cartItem)}
     </div>
-    </>
   );
 }
 

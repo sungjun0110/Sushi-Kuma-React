@@ -1,135 +1,48 @@
 import React from 'react';
+import CreateItems from '../CreateItems';
 
-const Rolls = () => {
+const Rolls = ( props ) => {
   return(
-    <>
-    <div className="discount">Every Roll <span style={{color: '#bf1a04', fontWeight: 'bold'}}>50% OFF!</span></div>
-    <div className="item-title">Beginner's Roll</div>
-    <div className="items">
-      <div className="item">
-        <h4>Alaskan Roll</h4>
-        <p>salmon, avocado<br />9.99</p>
-      </div>
+    <div className="item-div">
+      <div className="discount">Every Roll <span style={{color: '#bf1a04', fontWeight: 'bold'}}>50% OFF!</span></div>
+        {CreateItems(
+          "Beginner's Roll", 
+          {
+          "Alaskan Roll" : ["salmon, avocado", "9.99"], 
+          "Avokyu Roll" : ["avocado, cucumber", "8.99"], 
+          "California Roll" : ["crab meat, avocado", "8.99"], 
+          "Negi Hama" : ["yellowtail, green onion", "8.99"], 
+          "New York Roll" : ["shrimp, avocado", "9.99"], 
+          "Ocean Roll" : ["yellowtail, avocado", "9.99"], 
+          "Pacific Roll" : ["tuna, avocado", "9.99"], 
+          "Philly Roll" : ["salmon, cream cheese, avocado", "9.99"], 
+          "Sake Maki" : ["salmon", "8.99"], 
+          "Unakyu Roll" : ["eel, cucumber", "9.99"], 
+          "Salmon Skin Roll" : ["salmon skin, cucumber", "9.99"], 
+          "Spicy Tuna Roll" : ["spicy tuna, cucumber", "9.99"], 
+          "Texas Roll" : ["deep-fried jalapeno cream cheese, avocado", "9.99"], 
+          "Tekka Maki" : ["tuna", "8.99"], 
+          }, 
+          props.cartItem
+        )}
 
-      <div className="item">
-        <h4>Avokyu Roll</h4>
-        <p>avocado, cucumber<br />8.99</p>
-      </div>
-
-      <div className="item">
-        <h4>California Roll</h4>
-        <p>crab meat, avocado<br />8.99</p>
-      </div>
-
-      <div className="item">
-        <h4>Negi Hama</h4>
-        <p>yellowtail, green onion<br />8.99</p>
-      </div>
-
-      <div className="item">
-        <h4>New York Roll</h4>
-        <p>shrimp, avocado<br />9.99</p>
-      </div>
-
-      <div className="item">
-        <h4>Ocean Roll</h4>
-        <p>yellowtail, avocado<br />9.99</p>
-      </div>
-
-      <div className="item">
-        <h4>Pacific Roll</h4>
-        <p>tuna, avocado<br />9.99</p>
-      </div>
-
-      <div className="item">
-        <h4>Philly Roll</h4>
-        <p>salmon, cream cheese, avocado<br />9.99</p>
-      </div>
-
-      <div className="item">
-        <h4>Sake Maki</h4>
-        <p>salmon<br />8.99</p>
-      </div>
-
-      <div className="item">
-        <h4>Unakyu Roll</h4>
-        <p>eel, cucumber<br />9.99</p>
-      </div>
-
-      <div className="item">
-        <h4>Salmon Skin Roll</h4>
-        <p>salmon skin, cucumber<br />9.99</p>
-      </div>
-
-      <div className="item">
-        <h4>Spicy Tuna Roll</h4>
-        <p>spicy tuna, cucumber<br />9.99</p>
-      </div>
-
-      <div className="item">
-        <h4>Texas Roll</h4>
-        <p>deep-fried jalapeno cream cheese, avocado<br />9.99</p>
-      </div>
-
-      <div className="item">
-        <h4>Tekka Maki</h4>
-        <p>tuna<br />8.99</p>
-      </div>
+        {CreateItems(
+          "Temaki - Hand Roll", 
+          {
+          "California Hand Roll" : ["crab meat, avocado", "8.50"], 
+          "Tempura Hand Roll" : ["shrimp tempura, avocado, crab meat", "8.50"], 
+          "Spicy Tuna Hand Roll" : ["spicy tuna, cucumber", "8.99"], 
+          "Unagi Hand Roll" : ["eel, cucumber", "8.99"], 
+          "Hamachi Hand Roll" : ["hamachi, green onion", "8.99"], 
+          "Chop Hotate Hand Roll" : ["Spicy scallop", "8.99"], 
+          "Salmon Skin Hand Roll" : ["salmon skin, cucumber", "8.99"], 
+          "Spider Hand Roll" : ["Deep-fried softshell crab", "8.99"], 
+          "ZigZag Hand Roll" : ["deep-fried softshell crab,soy wrap", "8.99"], 
+          "Maguro Hand Roll" : ["tuna", "8.99"], 
+          }, 
+          props.cartItem
+        )}
     </div>
-
-    <div className="item-title">Temaki - Hand Roll</div>
-    <div className="items">
-      <div className="item">
-        <h4>California Hand Roll </h4>
-        <p>crab meat, avocado<br /></p>
-      </div>
-
-      <div className="item">
-        <h4>Tempura Hand Roll</h4>
-        <p>shrimp tempura, avocado, crabmeat<br />8.50</p>
-      </div>
-
-      <div className="item">
-        <h4>Spicy Tuna Hand Roll</h4>
-        <p>spicy tuna, cucumber<br />8.99</p>
-      </div>
-
-      <div className="item">
-        <h4>Unagi Hand Roll</h4>
-        <p>eel, cucumber<br />8.99</p>
-      </div>
-
-      <div className="item">
-        <h4>Hamachi Hand Roll</h4>
-        <p>hamachi, green onion<br />8.99</p>
-      </div>
-
-      <div className="item">
-        <h4>Chop Hotate Hand Roll</h4>
-        <p>Spicy scallop<br />8.99</p>
-      </div>
-
-      <div className="item">
-        <h4>Salmon Skin Hand Roll</h4>
-        <p>salmon skin, cucumber<br />8.99</p>
-      </div>
-
-      <div className="item">
-        <h4>Spider Hand Roll</h4>
-        <p>Deep-fried softshell crab<br />8.99</p>
-      </div>
-
-      <div className="item">
-        <h4>ZigZag Hand Roll</h4>
-        <p>deep-fried softshell crab,soy wrap<br />8.99</p>
-      </div>
-
-      <div className="item">
-        <h4>Maguro Hand Roll</h4>
-        <p>tuna<br />8.99</p>
-      </div>
-    </div>
-    </>
   );
 }
 
