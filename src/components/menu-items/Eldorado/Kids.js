@@ -1,24 +1,16 @@
 import React from 'react';
+import CreateItems from '../CreateItems';
 
-const Kids = () => {
+const Kids = ( props ) => {
   return(
     <div className="item-div">
-      <div className="item-title"></div>
-      
-      <div className="items">
-        <div className="item">
-          <h4>Teddy Bear 1</h4>
-          <p>Chicken teriyaki or Sesame chicken, California roll – 4pcs, gyoza - 2pcs<br />9.95</p>
-        </div>
-        <div className="item">
-          <h4>Teddy Bear 2</h4>
-          <p>Mixed tempura, California roll – 4pcs, gyoza - 2pcs<br />9.95</p>
-        </div>
-        <div className="item">
-          <h4>Teddy Bear 3</h4>
-          <p>Chicken Katsu or Ton Katsu, California – 4pcs, gyoza - 2pcs<br />9.95</p>
-        </div>
-      </div>
+      {CreateItems(
+        "Kids' Menu", 
+        {
+        "Teddy Bear 1" : ["Chicken teriyaki or Sesame chicken, California roll – 4pcs, gyoza - 2pcs", "9.95"], 
+        "Teddy Bear 2" : ["Mixed tempura, California roll – 4pcs, gyoza - 2pcs", "9.95"], 
+        "Teddy Bear 3" : ["Chicken Katsu or Ton Katsu, California – 4pcs, gyoza - 2pcs", "9.95"], 
+      }, props.cartItem)}
     </div>
   );
 }

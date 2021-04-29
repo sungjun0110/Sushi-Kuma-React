@@ -1,54 +1,24 @@
 import React from 'react';
+import CreateItems from  '../CreateItems';
 
-const Dessert = () => {
+const Dessert = ( props ) => {
   return(
-    <>
     <div className="item-div">
-      <div className="item-title"></div>
-      <div className="items">
-        <div className="item">
-          <h4>Soda</h4>
-          <p>Coke, Diet Coke, Mr.pibb, Lemonade, Fanta, Sprite<br />2.50</p>
-        </div>
-
-        <div className="item">
-          <h4>Ramune</h4>
-          <p>Japanese marble soda<br />2.99</p>
-        </div>
-
-        <div className="item">
-          <h4>Fruit Juice</h4>
-          <p>Apple, Orange<br />2.50</p>
-        </div>
-
-        <div className="item">
-          <h4>Sparkling Water </h4>
-          <p>s. Pellegrino<br />2.50</p>
-        </div>
-
-        <div className="item">
-          <h4>Iced Tea</h4>
-          <p>2.50</p>
-        </div>
-
-        <div className="item">
-          <h4>Green Iced Tea</h4>
-          <p>2.50</p>
-        </div>
-
-        <div className="item">
-          <h4>Hot Tea</h4>
-          <p>Genmai<br />1.00</p>
-        </div>
-
-        <div className="item">
-          <h4>Mochi Ice cream</h4>
-          <p>strawberry, chocolate, mango<br />3.99</p>
-        </div>
-      </div>
-    
+        {CreateItems(
+          "Dessert", 
+          {
+          "Soda" : ["Coke, Diet Coke, Mr.pibb, Lemonade, Fanta, Sprite", "2.50"], 
+          "Ramune" : ["Japanese marble soda", "2.99"], 
+          "Fruit Juice" : ["Apple, Orange", "2.50"], 
+          "Sparkling Water" : ["s. Pellegrino", "2.50"], 
+          "Iced Tea" : ["", "2.50"], 
+          "Green Iced Tea" : ["", "2.50"], 
+          "Hot Tea" : ["Genmai", "1.00"], 
+          "Mochi Ice cream" : ["strawberry, chocolate, mango", "3.99"], 
+          }, 
+          props.cartItem
+        )}
     </div>
-    </>
   );
 }
 

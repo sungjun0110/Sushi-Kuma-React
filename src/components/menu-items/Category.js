@@ -2,7 +2,7 @@ import React, { setState, useState, useEffect } from 'react';
 
 
 const clickHandler = ( names, setIsMenuActive ) => {
-  if (names[0] == 'menu-category') {
+  if (names[0] === 'menu-category') {
     names[1]('menu-category active');
     setIsMenuActive(true);
   } else {

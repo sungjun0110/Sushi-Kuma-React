@@ -1,97 +1,37 @@
 import React from 'react';
+import CreateItems from '../CreateItems';
 
-const Nigiri = () => {
+const Nigiri = ( props ) => {
   return(
     <div className="item-div">
-      <div className="item-title">Nigiri</div>
-
-      <div className="nigiri-warning">
-        <p>* Extra order: Uzura (Quail Egg).....1.50 *</p>
-      </div>
-      
-      <div className="items">
-        <div className="item">
-            <h4>Albacore</h4>
-            <p>white tuna<br />5.95</p>
+      {CreateItems(
+        "Nigiri", 
+        {
+          "Albacore" : ["white tuna", "5.95"], 
+          "Ama-Ebi" : ["sweet shrimp", "7.50"], 
+          "Ebi" : ["cooked shrimp", "4.50"], 
+          "Escolar" : ["escolar", "5.95"], 
+          "Hamachi" : ["yellow tail", "5.95"], 
+          "Hokkigai" : ["surf clam", "5.95"], 
+          "Hotate" : ["scallop", "5.95"], 
+          "Ika" : ["squid", "4.50"], 
+          "Ikura" : ["salmon roe", "5.50"], 
+          "Inari" : ["tofu wrap", "4.50"], 
+          "Kani" : ["snow crab", "7.95"], 
+          "Maguro" : ["tuna", "5.95"], 
+          "Masago" : ["smelt roe", "4.95"], 
+          "Saba" : ["mackerel", "4.95"], 
+          "Sake" : ["salmon", "5.95"], 
+          "Spicy Hotate" : ["spicy scallop", "5.95"], 
+          "Tako" : ["octopus", "4.95"], 
+          "Tamago" : ["sweet egg", "4.50"], 
+          "Tobiko" : ["flying fish roe", "5.95"], 
+          "Unagi" : ["fresh water eel", "5.95"], 
+        }, props.cartItem)}
+        
+        <div className="nigiri-warning">
+          <p>* Extra order: Uzura (Quail Egg).....1.50 *</p>
         </div>
-        <div className="item">
-          <h4>Ama-Ebi</h4>
-          <p>sweet shrimp<br />7.50</p>
-        </div>
-        <div className="item">
-          <h4>Ebi</h4>
-          <p>cooked shrimp<br />4.50</p>
-        </div>
-        <div className="item">
-          <h4>Escolar</h4>
-          <p>escolar<br />5.95</p>
-        </div>
-        <div className="item">
-          <h4>Hamachi</h4>
-          <p>yellow tail<br />5.95</p>
-        </div>
-        <div className="item">
-          <h4>Hokkigai</h4>
-          <p>surf clam<br />5.95</p>
-        </div>
-        <div className="item">
-          <h4>Hotate</h4>
-          <p>scallop<br />5.95</p>
-        </div>
-        <div className="item">
-          <h4>Ika</h4>
-          <p>squid<br />4.50</p>
-        </div>
-        <div className="item">
-          <h4>Ikura</h4>
-          <p>salmon roe<br />5.50</p>
-        </div>
-        <div className="item">
-          <h4>Inari</h4>
-          <p>tofu wrap<br />4.50</p>
-        </div>
-        <div className="item">
-          <h4>Kani</h4>
-          <p>snow crab<br />7.95</p>
-        </div>
-        <div className="item">
-          <h4>Maguro</h4>
-          <p>tuna<br />5.95</p>
-        </div>
-        <div className="item">
-          <h4>Masago</h4>
-          <p>smelt roe<br />4.95</p>
-        </div>
-        <div className="item">
-          <h4>Saba</h4>
-          <p>mackerel<br />4.95</p>
-        </div>
-        <div className="item">
-          <h4>Sake</h4>
-          <p>salmon<br />5.95</p>
-        </div>
-        <div className="item">
-          <h4>Spicy Hotate</h4>
-          <p>spicy scallop<br />5.95</p>
-        </div>
-        <div className="item">
-          <h4>Tako</h4>
-          <p>octopus<br />4.95</p>
-        </div>
-        <div className="item">
-          <h4>Tamago</h4>
-          <p>sweet egg<br />4.50</p>
-        </div>
-        <div className="item">
-          <h4>Tobiko</h4>
-          <p>flying fish roe<br />5.95</p>
-        </div>
-        <div className="item">
-          <h4>Unagi</h4>
-          <p>fresh water eel<br />5.95</p>
-        </div>
-
-      </div>
     </div>
   );
 }

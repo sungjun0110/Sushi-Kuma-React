@@ -9,7 +9,7 @@ const Header = ( ) => {
   const [isActive, setActive] = useState(false);
 
   useEffect(() => {
-    if (window.location.pathname != "/" && isActive == false) {
+    if (window.location.pathname !== "/" && isActive === false) {
       setActive(isActive => true);
     }
   });
