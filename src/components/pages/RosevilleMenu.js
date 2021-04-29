@@ -59,7 +59,7 @@ const RosevilleMenu = () => {
         {categories}
       </div>
 
-      <Cart cartItem={setSelectedItems} ></Cart>
+      {/* <Cart cartItem={setSelectedItems} ></Cart> */}
 
       <Link to='/menu'>
         <button id='back-btn'>Back</button>
