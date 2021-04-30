@@ -74,11 +74,7 @@ const EldoradoMenu = () => {
         {categories}
       </div>
 
-<<<<<<< Updated upstream
-      <Cart cartItem={setSelectedItems} ></Cart>
-=======
       <Cart items={items} setItem={setItem} dispatch={() => dispatch('remove')} ></Cart>
->>>>>>> Stashed changes
 
       <Link to='/menu'>
         <button id='back-btn'>Back</button>
