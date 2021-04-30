@@ -12,7 +12,7 @@ const Kids = ( props ) => {
           "Teddy Bear 3" : ["Chicken Katsu or Ton Katsu, California – 4pcs, gyoza - 2pcs", "9.95"], 
           "Kid’s Udon" : ["Thick noodle soup", "8.95"], 
           }, 
-          props.cartItem
+          props
         )}
     </div>
   );

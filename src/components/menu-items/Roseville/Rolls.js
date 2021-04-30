@@ -23,7 +23,7 @@ const Rolls = ( props ) => {
           "Texas Roll" : ["deep-fried jalapeno cream cheese, avocado", "9.99"], 
           "Tekka Maki" : ["tuna", "8.99"], 
           }, 
-          props.cartItem
+          props
         )}
 
         {CreateItems(
@@ -40,7 +40,7 @@ const Rolls = ( props ) => {
           "ZigZag Hand Roll" : ["deep-fried softshell crab,soy wrap", "8.99"], 
           "Maguro Hand Roll" : ["tuna", "8.99"], 
           }, 
-          props.cartItem
+          props
         )}
     </div>
   );

@@ -16,7 +16,7 @@ const Dessert = ( props ) => {
           "Hot Tea" : ["Genmai", "1.00"], 
           "Mochi Ice cream" : ["strawberry, chocolate, mango", "3.99"], 
           }, 
-          props.cartItem
+          props
         )}
     </div>
   );

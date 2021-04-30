@@ -28,7 +28,7 @@ const Nigiri = ( props ) => {
           "Tobiko" : ["flying fish roe", "5.95"], 
           "Unagi" : ["fresh water eel", "5.95"], 
           }, 
-          props.cartItem
+          props
         )}
     </div>
   );
