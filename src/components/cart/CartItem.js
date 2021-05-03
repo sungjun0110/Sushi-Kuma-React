@@ -1,4 +1,5 @@
 import React from 'react';
+import './Cart.css';
 
 const Content = ( props ) => {
   function clickHandler() {
@@ -7,9 +8,12 @@ const Content = ( props ) => {
   }
 
   return (
-    <div className="item">
-      <h4>{props.itemName}<button onClick={clickHandler}>X</button></h4>
-      <p>{props.description}<br />{props.price}</p>
+    <div className="cartItem">
+        <div className="leftItemBox">
+            <h4>{props.itemName}</h4>
+            <p>{props.price}</p>
+        </div>
+        <button className="deleteBtn" onClick={clickHandler}>X</button>
     </div>
   );
 }

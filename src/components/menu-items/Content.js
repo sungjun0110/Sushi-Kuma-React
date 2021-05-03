@@ -7,10 +7,10 @@ const Content = ( props ) => {
   }
 
   return (
-    <div className="item" onClick={clickHandler}>
+    <button className="item" onClick={clickHandler}>
       <h4>{props.itemName}</h4>
       <p>{props.description}<br />{props.price}</p>
-    </div>
+    </button>
   );
 }
 

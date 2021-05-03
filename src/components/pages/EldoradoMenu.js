@@ -34,10 +34,6 @@ const EldoradoMenu = () => {
   const [item, setItem] = useState({});
   const [items, dispatch] = useReducer(reducer, []);
 
-  // useEffect(() => {
-  //   console.log(items);
-  // });
-
   // categori name : page element
   const cateDict = {
     'Appetizer': <App setItem={setItem} dispatch={() => dispatch('add')} />, 

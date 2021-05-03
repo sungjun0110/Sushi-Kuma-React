@@ -55,3 +55,48 @@
 #cart-content::-webkit-scrollbar {
     display: none;
   }
+
+.leftItemBox {
+    width: 80%;
+}
+
+.cartItem {
+    margin: 5px auto ;
+    max-width: 400px;
+    display: flex;
+    border-radius: 100px;
+    flex: 1 1 400px;
+    background: #333;
+    padding: 15px 15px;
+}
+  
+.cartItem h4 {
+    margin: 0;
+    font-style: italic;
+    font-size: 25px;
+    font-weight: normal;
+    color: #ddd;
+}
+  
+.cartItem p {
+    font-size: 20px;
+    color: #ddd;
+    margin: 0px;
+}
+
+
+.deleteBtn {
+    background-color: rgb(37,37,37,1);
+    border: none;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    margin: auto;
+    font-size: 20px;
+}
+
+.deleteBtn:hover{
+    background-color: rgba(150,26,4,1);
+    color: white;
+}
+

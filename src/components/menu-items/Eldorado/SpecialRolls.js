@@ -56,7 +56,7 @@ const SpecialRolls = ( props ) => {
           "Red Hawk" : ["Deep-fried shrimp, crab meat | scallop, masago | special sauce", "17.99"], 
           "Samurai" : ["Deep-fried asparagus, spicy crab, spicy tuna | salmon, white tuna, masago | special sauce", "17.99"], 
           "Sunrise" : ["Spicy crab, Salmon, tuna, yellowtail, avo | spicy& special sauce - 5pcs", "17.99"], 
-          "Valentine Roll" : ["Deep-fried shrimp, crab meat, cilantro, lemon | tuna, salmon, g onion | special sauce", "18.99"], 
+          "Valentine Roll" : ["Deep-fried shrimp, crab meat, lemon | tuna, salmon, green onion | special sauce", "18.99"], 
           "Viagra" : ["Spicy tuna, spicy crab meat, | tuna, salmon, yellowtail, masago | spicy & special sauce", "17.99"], 
         }, props)}
 
