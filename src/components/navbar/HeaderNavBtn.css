@@ -5,7 +5,7 @@
     width: auto;
     min-width: 100px;
     color: rgba(211,211,211,0);
-    height: 50px;
+    height: 56px;
     font-size: 30px;
     transition: 0.4s;
     cursor: pointer;
@@ -14,7 +14,7 @@
 }
   
 #headerNavBtn.active {
-    font-size: 10px;
+    font-size: 13px;
     color: rgba(211,211,211,1);
 }
 

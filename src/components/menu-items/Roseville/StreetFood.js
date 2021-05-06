@@ -19,7 +19,7 @@ const StreetFood = ( props ) => {
         "Bulgogi Donburi" : ["marinated Korean style beef over steamed rice", "15.95"], 
         "Sake Donburi" : ["slices of raw salmon over steamed rice with seaweed salad vinaigrette, masago", "21.95"], 
         "Tekka Donburi" : ["slices of raw tuna over steamed rice", "21.95"], 
-      }, props.cartItem)}
+      }, props)}
     </div>
   )
 }

@@ -13,7 +13,7 @@ const Entree = ( props ) => {
           "Tempura Udon" : ["a thick noodle soup with vegetable & mixed tempura on the side", "L 12.95 | D 15.95"], 
           "Seafood Udon" : ["a thick noodle soup with assorted seafood & vegetable", "L 12.95 | D 15.95"], 
           }, 
-          props.cartItem
+          props
         )}
 
         {CreateItems(
@@ -32,7 +32,7 @@ const Entree = ( props ) => {
           "Sesame Chicken" : ["Tempura fried chicken breast with teriyaki sesame sauce", "L 11.95 | D 16.95"], 
           "Bulgogi" : ["Marinated Korean style beef", "L 12.95 | D	17.95"], 
           }, 
-          props.cartItem
+          props
         )}
 
         {CreateItems(
@@ -44,7 +44,7 @@ const Entree = ( props ) => {
           "Sesame Chicken" : ["Tempura fried chicken breast with teriyaki sesame sauce over rice", "L 9.95 | D 12.95"], 
           "Beef Teriyaki" : ["Grilled beef steak with teriyaki sauce over rice", "L 10.95 | D 13.95"], 
           }, 
-          props.cartItem
+          props
         )}
     </div>
   );

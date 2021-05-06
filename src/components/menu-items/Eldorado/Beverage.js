@@ -15,7 +15,8 @@ const Beverage = ( props ) => {
           "Hot Sake" : ["Sho chiku Bai", "S: 3.50 | L: 6.50"],  
           "Sake Bomb" : ["Sake & Sapporo Draft Beer", "3.50"],  
           "Oyster Shooter" : ["", "3.95"], 
-        }, props.cartItem)}
+        }, props)}
+
       <div className="corkage" style={{marginTop: "20px", color: "#ddd"}}>*** Corkage Fee - 10.00 ***</div>
     </div>
   );

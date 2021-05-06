@@ -15,7 +15,7 @@ const Appetizer = ( props ) => {
         "Seafood Sunomono" : ["cucumber with assorted seafood in vinegar sauce", "7.95"], 
         "Hawaiian Poke" : ["ahi tuna, cucumber, onion with ponzu, sesame oil, spicy sauce & tobiko", "11.95"], 
         }, 
-        props.cartItem
+        props
       )}
       
       {CreateItems(
@@ -27,7 +27,7 @@ const Appetizer = ( props ) => {
         "Chicken Teriyaki" : ["grilled chicken with teriyaki sauce", "9.95"], 
         "Hamachi Kama" : ["grilled yellow tail cheek bone with ponzu sauce", "11.50"], 
         }, 
-        props.cartItem
+        props
       )}
 
       {CreateItems("Deep-Fried",
@@ -43,7 +43,7 @@ const Appetizer = ( props ) => {
         "Honey Spice Chicken" : ["pan fried chicken, honey spice sauce", "9.95"], 
         "Sesame Chicken" : ["tempura fried chicken, teriyaki sauce", "9.95"], 
         }, 
-        props.cartItem
+        props
       )}
 
       {CreateItems(
@@ -56,7 +56,7 @@ const Appetizer = ( props ) => {
         "Garlic Sashimi" : ["7pcs of salmon with fried garlic special sauce", "14.95"], 
         "Hamachi Carpaccio" : ["Sliced Hamachi jalapeno with chili pepper ponzu olive oil", "14.95"], 
         }, 
-        props.cartItem
+        props
       )}
     </div>
   );

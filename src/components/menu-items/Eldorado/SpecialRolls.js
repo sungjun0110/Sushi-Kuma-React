@@ -18,7 +18,7 @@ const SpecialRolls = ( props ) => {
           "Tempura Roll" : ["Deep-fried shrimp, avocado, cucumber, crabmeat | 5pcs", "12.99"], 
           "Veggie Tempura Roll" : ["Deep-fried carrot, zucchini, asparagus | unagi sauce- 5pcs", "12.50"], 
           "Yummy Yummy" : ["Deep-fried shrimp, avocado, cucumber, cream cheese, crab meat, masago | 5pcs", "14.50"], 
-        }, props.cartItem)}
+        }, props)}
 
         {CreateItems(
           "Eel", 
@@ -30,7 +30,7 @@ const SpecialRolls = ( props ) => {
           "Spicy Johny" : ["Deep-fried shrimp, spicy tuna | eel, masago | special sauce", "17.99"], 
           "Spicy crunchy" : ["Spicy tuna, eel, seaweed salad, cucumber | crunchy, unagi sauce | 5pcs", "15.50"], 
           "Lake Tahoe" : ["Deep-fried shrimp, cream cheese, cucumber | unagi, masago | special sauce", "17.50"], 
-        }, props.cartItem)}
+        }, props)}
 
         {CreateItems(
           "Raw", 
@@ -56,9 +56,9 @@ const SpecialRolls = ( props ) => {
           "Red Hawk" : ["Deep-fried shrimp, crab meat | scallop, masago | special sauce", "17.99"], 
           "Samurai" : ["Deep-fried asparagus, spicy crab, spicy tuna | salmon, white tuna, masago | special sauce", "17.99"], 
           "Sunrise" : ["Spicy crab, Salmon, tuna, yellowtail, avo | spicy& special sauce - 5pcs", "17.99"], 
-          "Valentine Roll" : ["Deep-fried shrimp, crab meat, lemon | tuna, salmon, g onion | special sauce", "18.99"], 
+          "Valentine Roll" : ["Deep-fried shrimp, crab meat, lemon | tuna, salmon, green onion | special sauce", "18.99"], 
           "Viagra" : ["Spicy tuna, spicy crab meat, | tuna, salmon, yellowtail, masago | spicy & special sauce", "17.99"], 
-        }, props.cartItem)}
+        }, props)}
 
         {CreateItems(
           "Seared", 
@@ -73,7 +73,7 @@ const SpecialRolls = ( props ) => {
           "White Rock" : ["Deep-fried asparagus, spicy crab | seared white tuna, deep-fried onion | special sauce", "16.50"], 
           "X-File" : ["Deep-fried shrimp, spicy tuna | 5 kinds of seared fish, masago | chilli pepper, unagi sauce", "18.99"], 
           "Yosemite" : ["Deep-friedShrimp, spicy crab | seared tuna, deep-fried carrot | unagi sauce", "16.50"], 
-        }, props.cartItem)}
+        }, props)}
 
         {CreateItems(
           "Deep-Fried", 
@@ -82,14 +82,14 @@ const SpecialRolls = ( props ) => {
           "Golden Spicy" : ["Spicy tuna, cream cheese, cucumber | deep-fried, spicy & unagi sauce", "12.99"], 
           "Ninja" : ["Spicy tuna, albacore, eel, cream cheese | deep-fried, masago, spicy & special sauce - 5pcs", "16.99"], 
           "Oh! Yes" : ["Salmon, tuna, yellowtail, avocado | deep-fried, unagi sauce - 5pcs", "16.99"], 
-        }, props.cartItem)}
+        }, props)}
 
         {CreateItems(
           "Baked", 
           {
           "Lion King" : ["Crab meat, avocado | salmon, special sauce & masago added after cooking - 6pcs", "15.50"], 
           "Volcanic Scallop" : ["Crab meat, avocado | scallop, special sauce & masago added after cooking - 6pcs", "15.50"], 
-        }, props.cartItem)}
+        }, props)}
 
       <div className="roll-extra">
         <h3>Would you like to add toppings?</h3>

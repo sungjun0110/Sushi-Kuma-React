@@ -16,7 +16,7 @@ const SushiCombo = ( props ) => {
           "Sashimi Lunch" : ["12 pcs chef’s choice of sliced raw fish & served with steamed rice", "20.95"], 
           "Sashimi Dinner" : ["16 pcs chef’s choice of sliced raw fish & served with steamed rice", "25.95"], 
           "Sashimi Deluxe" : ["25 pcs chef’s choice of sliced raw fish", "36.95"], 
-        }, props.cartItem)}
+        }, props)}
     </div>
   );
 }

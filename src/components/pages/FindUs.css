@@ -1,10 +1,13 @@
 #stores {
-    margin-top: 130px;
     display: flex;
     flex-flow: column wrap;
     justify-content: space-evenly;
-    height: calc(95vh - 300px);
+    height: calc(100vh - 110px);
     overflow: auto;
+}
+
+#stores::-webkit-scrollbar {
+    display: none;
 }
 
 .store {
@@ -25,8 +28,7 @@
 @media only screen and (max-width: 550px) {
     #stores {
         flex-flow: row wrap;
-        height: calc(95vh - 120px);
-        margin-top: 80px;
+        height: calc(100vh - 120px);
     }
     
     .store {

@@ -11,7 +11,7 @@ const Sides = ( props ) => {
           "Bowl of Steamed Rice" : ["", "2.00"], 
           "Bowl of Sushi Rice" : ["", "2.00"], 
           }, 
-          props.cartItem
+          props
         )}
     </div>
   );

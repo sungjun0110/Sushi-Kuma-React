@@ -11,7 +11,6 @@ const activeHandler = ( btn, logo ) => {
 const Navbar = ( props ) => {
   const [isBtnActive, setBtnActive] = useState(false);
   const [btnClicked, setBtnClicked] = useState([]);
-  const buttons = [];
 
   useEffect(() => {
     if ( !props.isLogoActive ) setBtnActive(isBtnActive => false);
@@ -41,7 +40,7 @@ const Navbar = ( props ) => {
           onClick={()=>activeHandler(setBtnActive, props.setLogoActive)}
         />
         <HeaderNavBtn
-          value='Reservation'
+          value='More'
           isLogoActive={props.isLogoActive}
           btnActiveStatus={isBtnActive}
           setActiveDir={props.setActiveDir} 
@@ -69,7 +68,7 @@ const Navbar = ( props ) => {
           onClick={()=>activeHandler(setBtnActive, props.setLogoActive)}
         />
         <Navbtn
-          value='Reservation'
+          value='More'
           isLogoActive={props.isLogoActive}
           btnActiveStatus={isBtnActive}
           setActiveDir={props.setActiveDir} 

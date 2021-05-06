@@ -17,7 +17,7 @@ const Rolls = ( props ) => {
           "Kappa Maki" : ["cucumber", "8.50"], 
           "Oshinko Maki" : ["pickled radish", "8.50"], 
           "Texas Roll" : ["deep-fried jalapeno, avocado, cream cheese", "9.99"], 
-        }, props.cartItem)}
+        }, props)}
 
         {CreateItems(
           "Beginner's Roll", 
@@ -36,7 +36,7 @@ const Rolls = ( props ) => {
           "Spicy California" : ["spicy crabmeat, avocado", "8.99"], 
           "Spicy Tuna Roll" : ["spicy tuna, cucumber", "9.99"], 
           "Tekka Maki" : ["tuna", "8.99"], 
-        }, props.cartItem)}
+        }, props)}
 
         {CreateItems(
           "Temaki - Hand Roll", 
@@ -50,7 +50,7 @@ const Rolls = ( props ) => {
           "Salmon Skin Hand Roll" : ["salmon skin, cucumber", "8.99"], 
           "Spider Hand Roll" : ["deep-fried softshell crab", "8.99"], 
           "ZigZag Hand Roll" : ["deep-friedsoftshell crab,soy wrap", "8.99"], 
-        }, props.cartItem)}
+        }, props)}
     </div>
   );
 }

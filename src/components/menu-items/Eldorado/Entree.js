@@ -12,7 +12,7 @@ const Entree = ( props ) => {
           "Nabe Udon" : ["thick noodle soup with shrimp tempura, chicken, vegetable", "L 12.95 | D 15.95"], 
           "Tempura Udon" : ["thick noodle soup with vegetable & mixed tempura on the side", "L 12.95 | D 15.95"], 
           "Seafood Udon" : ["thick noodle soup with assorted seafood & vegetable", "L 12.95 | D 15.95"], 
-        }, props.cartItem)}
+        }, props)}
 
         {CreateItems(
           "Kuma Single Entrée", 
@@ -27,7 +27,7 @@ const Entree = ( props ) => {
           "Chicken Katsu" : ["Panko fried chicken breast cutlets with katsu sauce", "L 11.95 | D 16.95"], 
           "Ton Katsu" : ["Panko fried pork loin cutlets with katsu sauce", "L 11.95 | D 16.95"], 
           "Sesame Chicken" : ["Tempura fried chicken breast with teriyaki sesame sauce", "L 11.95 | D 16.95"], 
-        }, props.cartItem)}
+        }, props)}
 
         {CreateItems(
           "Bowl Special", 
@@ -36,7 +36,7 @@ const Entree = ( props ) => {
           "Chicken Katsu" : ["Panko fried chicken breast cutlets with katsu sauce over rice", "L 9.95 | D 12.95"], 
           "Chicken Teriyaki" : ["Grilled chicken with teriyaki sauce over rice", "L 9.95 | D 12.95"], 
           "Sesame Chicken" : ["Tempura fried chicken breast with teriyaki sesame sauce over rice", "L 9.95 | D 12.95"], 
-        }, props.cartItem)}
+        }, props)}
     </div>
   );
 }

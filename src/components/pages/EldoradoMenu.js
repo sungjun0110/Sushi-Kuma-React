@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useReducer, useState, useEffect } from 'react';
 import Category from '../menu-items/Category';
 import { Link } from 'react-router-dom';
 
@@ -12,27 +12,43 @@ import Roll from '../menu-items/Eldorado/Rolls';
 import Side from '../menu-items/Eldorado/Sides';
 import Spe from '../menu-items/Eldorado/SpecialRolls';
 import Com from '../menu-items/Eldorado/SushiCombo';
-import Ben from '../menu-items/Eldorado/Bento';
+import DinnerBento from '../menu-items/Eldorado/DinnerBento';
+import LunchBento from '../menu-items/Eldorado/LunchBento';
 
 import Cart from '../cart/Cart';
 
 const EldoradoMenu = () => {
-  const [selectedItems, setSelectedItems] = useState([]);
+  const reducer = (items, action) => {
+    switch (action) {
+      case 'add':
+        let temp = [...items, {id: itemId , name: item.name, description: item.description, price: item.price}];
+        setItemId(itemId+1);
+        return temp;
+      case 'remove':
+        return items.filter(i => i.id !== item.id);
+      default:
+        return items;
+    }
+  }
+
+  const [itemId, setItemId] = useState(0);
+  const [item, setItem] = useState({});
+  const [items, dispatch] = useReducer(reducer, []);
 
   // categori name : page element
   const cateDict = {
-    'Appetizer': <App cartItem={setSelectedItems} />, 
-    'Nigiri': <Nigi cartItem={setSelectedItems} />, 
-    'Kuma Bento Box': <Ben cartItem={setSelectedItems} />, 
-    'Entrée': <Ent cartItem={setSelectedItems} />, 
-    "Kids' Menu": <Kid cartItem={setSelectedItems} />, 
-    'Sushi & Sashimi Combo': <Com cartItem={setSelectedItems} />, 
-    'Rolls': <Roll cartItem={setSelectedItems} />, 
-    'Kuma Special Rolls': <Spe cartItem={setSelectedItems} />, 
-    'Side': <Side cartItem={setSelectedItems} />, 
-    'Alcoholic Beverage': <Bev cartItem={setSelectedItems} />, 
-    'Beverage & Dessert': <Des cartItem={setSelectedItems} />, 
-    
+    'Appetizer': <App setItem={setItem} dispatch={() => dispatch('add')} />, 
+    'Nigiri': <Nigi setItem={setItem} dispatch={() => dispatch('add')} />, 
+    'Lunch Bento Box': <LunchBento setItem={setItem} dispatch={() => dispatch('add')} />, 
+    'Dinner Bento Box': <DinnerBento setItem={setItem} dispatch={() => dispatch('add')} />, 
+    'Entrée': <Ent setItem={setItem} dispatch={() => dispatch('add')} />, 
+    "Kids' Menu": <Kid setItem={setItem} dispatch={() => dispatch('add')} />, 
+    'Sushi & Sashimi Combo': <Com setItem={setItem} dispatch={() => dispatch('add')} />, 
+    'Rolls': <Roll setItem={setItem} dispatch={() => dispatch('add')} />, 
+    'Kuma Special Rolls': <Spe setItem={setItem} dispatch={() => dispatch('add')} />, 
+    'Side': <Side setItem={setItem} dispatch={() => dispatch('add')} />, 
+    'Alcoholic Beverage': <Bev setItem={setItem} dispatch={() => dispatch('add')} />, 
+    'Beverage & Dessert': <Des setItem={setItem} dispatch={() => dispatch('add')} />, 
   }
 
   const categories = [];
@@ -43,24 +59,22 @@ const EldoradoMenu = () => {
 
   return (
     <>
-      <div id='title'>
-        <h3>
-          El Dorado Hills
-        </h3>
-      </div>
+      <div className='page'>
+        <div id='title'>
+            El Dorado Hills
+        </div>
 
-      <div className='menu-div'>
         <div className='warning'>
           <p>*Consuming raw or undercooked meats, poultry, seafood, shellfish, or eggs may increase your risk of foodborne illness.<br />*Our menu and prices are subject to change.<br />*18% gratuity will be added for parties of six or more.</p>
         </div>
         {categories}
+
+        <Link to='/menu'>
+          <button id='back-btn'>Back</button>
+        </Link>
       </div>
 
-      {/* <Cart cartItem={setSelectedItems} ></Cart> */}
-
-      <Link to='/menu'>
-        <button id='back-btn'>Back</button>
-      </Link>
+      {/* <Cart items={items} setItem={setItem} dispatch={() => dispatch('remove')} ></Cart> */}
     </>
   );
 }

@@ -27,7 +27,7 @@ const Nigiri = ( props ) => {
           "Tamago" : ["sweet egg", "4.50"], 
           "Tobiko" : ["flying fish roe", "5.95"], 
           "Unagi" : ["fresh water eel", "5.95"], 
-        }, props.cartItem)}
+        }, props)}
         
         <div className="nigiri-warning">
           <p>* Extra order: Uzura (Quail Egg).....1.50 *</p>

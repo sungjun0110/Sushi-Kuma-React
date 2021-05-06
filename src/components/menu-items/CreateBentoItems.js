@@ -11,7 +11,6 @@ const CreateItems = ( title, items, props ) => {
     return (
         <>
             <div className="item-title">{title}</div>
-            {(title === "Sushi & Sashimi Combination")? <p style={{color:"#ddd"}}>Served with soup & salad</p> : null}
             <div className="items">
                 {itemComponents}
             </div>

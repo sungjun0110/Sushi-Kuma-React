@@ -14,7 +14,7 @@ const Appetizer = ( props ) => {
         "Veggie Sunomono": ["cucumber in vinegar sauce", "5.50"], 
         "Seafood Sunomono": ["cucumber with assorted seafood in vinegar sauce", "7.95"], 
         "Hawaiian Poke": ["ahi tuna, cucumber, onion with ponzu, sesame oil, spicy sauce & tobiko", "11.95"], 
-      }, props.cartItem)}
+      }, props)}
 
       {CreateItems(
         "Grilled", 
@@ -24,7 +24,7 @@ const Appetizer = ( props ) => {
         "Sea Steak" : ["grilled ahi tuna with ponzu & special sauce - 8 pcs", "14.95"], 
         "Chicken Teriyaki" : ["grilled chicken with teriyaki sauce", "9.95"], 
         "Hamachi Kama" : ["grilled yellow tail cheek bone with ponzu sauce", "11.50"], 
-      }, props.cartItem)}
+      }, props)}
 
       {CreateItems(
         "Deep-Fried", 
@@ -40,7 +40,7 @@ const Appetizer = ( props ) => {
         "Mixed Tempura" : ["shrimp - 2 pcs, vegetables - 5 pcs", "8.95"], 
         "Honey Spice Chicken" : ["pan fried chicken, honey spice sauce", "9.95"], 
         "Sesame Chicken" : ["tempura fried chicken, teriyaki sauce", "9.95"], 
-      }, props.cartItem)}
+      }, props)}
 
       {CreateItems(
         "Raw Fish", 
@@ -49,7 +49,7 @@ const Appetizer = ( props ) => {
         "Pepper Fin" : ["white tuna with jalapeno, spicy ponzu sauce and sesame oil", "14.95"], 
         "7 Pcs Sashimi" : ["choice of one - salmon, tuna, yellowtail - 7 pcs", "14.50"], 
         "Assorted Sashimi" : ["chef's choice of today's raw fish - 12 pcs", "19.95"], 
-      }, props.cartItem)}
+      }, props)}
     </div>
   );
 }
