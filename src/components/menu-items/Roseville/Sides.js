@@ -9,7 +9,7 @@ const Sides = ( props ) => {
           {
           "Miso Soup" : ["", "2.00"], 
           "Bowl of Steamed Rice" : ["", "2.00"], 
-          "Bowl of Sushi Rice" : ["", "2.00"], 
+          "Bowl of Sushi Rice" : ["", "2.50"], 
           }, 
           props
         )}
