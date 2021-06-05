@@ -39,7 +39,8 @@ const EldoradoMenu = () => {
   const cateDict = {
     'Appetizer': <App setItem={setItem} dispatch={() => dispatch('add')} />, 
     'Nigiri': <Nigi setItem={setItem} dispatch={() => dispatch('add')} />, 
-    'Kuma Bento Box': <Ben setItem={setItem} dispatch={() => dispatch('add')} />, 
+    'Lunch Bento Box': <LunchBento setItem={setItem} dispatch={() => dispatch('add')} />, 
+    'Dinner Bento Box': <DinnerBento setItem={setItem} dispatch={() => dispatch('add')} />, 
     'Entrée': <Ent setItem={setItem} dispatch={() => dispatch('add')} />, 
     "Kids' Menu": <Kid setItem={setItem} dispatch={() => dispatch('add')} />, 
     'Sushi & Sashimi Combo': <Com setItem={setItem} dispatch={() => dispatch('add')} />, 

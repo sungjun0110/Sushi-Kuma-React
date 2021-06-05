@@ -9,7 +9,7 @@ const Appetizer = ( props ) => {
         {
         "Edamame": ["boiled and salted soybeans", "5.95"], 
         "Spicy Edamame": ["pan-fried soybeans with Japanese spice mix", "6.95"], 
-        "Green Salad": ["pan-fried soybeans with Japanese spice mix", "6.50"], 
+        "Green Salad": ["pan-fried soybeans with Japanese spice mix", "5.95"], 
         "Seaweed Salad": ["seaweed marinated with sesame oil", "6.95"], 
         "Veggie Sunomono": ["cucumber in vinegar sauce", "5.95"], 
         "Seafood Sunomono": ["cucumber with assorted seafood in vinegar sauce", "9.95"], 
