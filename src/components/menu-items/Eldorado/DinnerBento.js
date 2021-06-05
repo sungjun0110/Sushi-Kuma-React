@@ -3,9 +3,9 @@ import React from 'react';
 const Bento = () => {
     return (
     <div className='item-div'>
-      <div className="item-title">KUMA BENTO BOX</div>
+      <div className="item-title">Dinner Bento Box</div>
 
-      <div className="bento-description">Lunch: Before 4 pm &nbsp; 13.50<br />Dinner: After 4 pm &nbsp; 17.95<br /><span style={{fontSize: '18px'}}>* Served with soup, salad & rice *<br />* Duplicate choices charge extra $ 1*<br />* No substitution on bento box *</span></div>
+      <div className="bento-description">Dinner: 16.95<br /><span style={{fontSize: '18px'}}>* Served with soup, salad & rice *<br />* Duplicate choices charge extra $ 1*<br />* No substitution on bento box *</span></div>
       
       <div className="bento-items">
         <div className="item">Beef Teriyaki</div>

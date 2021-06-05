@@ -3,24 +3,25 @@ h1 {
 }
 
 #page {
-  height: calc(95vh - 230px);
+  height: calc(100vh - 230px);
   min-width: 1280px;
 }
 
 #title {
-  margin-top: 140px;
   color: white;
   font-family: "Courier New", Courier, monospace;
   font-size: 35px;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 
-.menu-div {
-  height: calc(100vh - 450px);
+.page {
+  height: calc(100vh - 130px);
   overflow: auto;
   scrollbar-width: none;
 }
 
-.menu-div::-webkit-scrollbar {
+.page::-webkit-scrollbar {
   display: none;
 }
 
@@ -176,10 +177,20 @@ h1 {
 .item {
   margin: 5px ;
   max-width: 400px;
+  border: none;
   border-radius: 100px;
   flex: 1 1 400px;
-  background: #333;
+  background-color: #333;
   padding: 15px 15px;
+}
+
+.item:hover {
+  background-color: rgba(150,26,4,1)
+}
+
+.item::after {
+  background-color: #333;
+  transition: all 0.4s;
 }
 
 .item h4 {
@@ -245,12 +256,7 @@ h1 {
 
   /* menu mobile version */
   #title {
-    margin-top: 90px;
     font-size: 25px;
-  }
-
-  .menu-div {
-    height: calc(100vh - 300px);
   }
 
   #main-nav {

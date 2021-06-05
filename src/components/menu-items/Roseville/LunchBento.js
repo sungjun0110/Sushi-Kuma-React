@@ -2,12 +2,12 @@ import React from 'react';
 import Item from  '../Content';
 
 
-const Bento = () => {
+const LunchBento = () => {
     return (
         <div className="item-div">
-            <div className="item-title">KUMA BENTO BOX</div>
+            <div className="item-title">Lunch Bento Box</div>
 
-            <div className="bento-description">Lunch: Before 4 pm &nbsp; 13.50<br />Dinner: After 4 pm &nbsp; 17.95<br /><span style={{fontSize: '20px'}}>* Served with soup, salad & rice *<br />* Duplicate choices charge extra $ 1*<br />* No substitution on bento box *</span></div>
+            <div className="bento-description">Lunch: 12.50<br /><span style={{fontSize: '20px'}}>* Served with soup, salad & rice *<br />* Duplicate choices charge extra $ 1*<br />* No substitution on bento box *</span></div>
             
             <div className="bento-items">
                 <div className="item">Beef Teriyaki</div>
@@ -30,4 +30,4 @@ const Bento = () => {
     )
 }
 
-export default Bento;
+export default LunchBento;
