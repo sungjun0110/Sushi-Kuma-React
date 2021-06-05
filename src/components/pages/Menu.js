@@ -1,26 +1,31 @@
 import React from 'react';
-import { Link, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { useSpring, animated } from 'react-spring';
 
 
-const Menu = ( props ) => (
-  <div className="pages">
-    <div className="location-page">
-      <div className="location-selector" id="menu-page/locations">
-        <Link id="menu-selector-btn" to='/eldoradohills'>
-          <button>
-            El Dorado Hills
-          </button>
-        </Link>
+const Menu = ( props ) => {
 
-        <Link id="menu-selector-btn" to='/roseville'>
-          <button>
-            Roseville
-          </button>
+  return (
+    <div className="pages">
+      <div className="location-page">
+        <div className="location-selector" id="menu-page/locations">
+          
+          <Link id="menu-selector-btn" to='/eldoradohills'>
+            <button>
+              El Dorado Hills
+            </button>
+          </Link>
 
-        </Link>
+          <Link id="menu-selector-btn" to='/roseville'>
+            <button>
+              Roseville
+            </button>
+
+          </Link>
+        </div>
       </div>
     </div>
-  </div>
-);
+  );
+}
 
 export default Menu;

@@ -176,10 +176,20 @@ h1 {
 .item {
   margin: 5px ;
   max-width: 400px;
+  border: none;
   border-radius: 100px;
   flex: 1 1 400px;
-  background: #333;
+  background-color: #333;
   padding: 15px 15px;
+}
+
+.item:hover {
+  background-color: rgba(150,26,4,1)
+}
+
+.item::after {
+  background-color: #333;
+  transition: all 0.4s;
 }
 
 .item h4 {

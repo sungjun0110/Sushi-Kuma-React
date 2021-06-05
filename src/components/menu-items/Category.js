@@ -1,4 +1,4 @@
-import React, { setState, useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 
 const clickHandler = ( names, setIsMenuActive ) => {

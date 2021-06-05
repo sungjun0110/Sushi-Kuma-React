@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useReducer } from 'react';
 import Category from '../menu-items/Category';
 import './Menu.css';
 import { Link } from 'react-router-dom';
@@ -19,23 +19,37 @@ import Ben from '../menu-items/Roseville/Bento';
 import Cart from '../cart/Cart';
 
 const RosevilleMenu = () => {
-  const [selectedItems, setSelectedItems] = useState([]);
+  const reducer = (items, action) => {
+    switch (action) {
+      case 'add':
+        let temp = [...items, {id: itemId , name: item.name, description: item.description, price: item.price}];
+        setItemId(itemId+1);
+        return temp;
+      case 'remove':
+        return items.filter(i => i.id !== item.id);
+      default:
+        return items;
+    }
+  }
+
+  const [itemId, setItemId] = useState(0);
+  const [item, setItem] = useState({});
+  const [items, dispatch] = useReducer(reducer, []);
 
   // categori name : page element
   const cateDict = {
-    'Appetizer': <App cartItem={setSelectedItems} />, 
-    'Nigiri': <Nigi cartItem={setSelectedItems} />, 
-    'Street Food': <Street cartItem={setSelectedItems} />,
-    'Kuma Bento Box': <Ben cartItem={setSelectedItems} />,  
-    'Entrée': <Ent cartItem={setSelectedItems} />, 
-    "Kids' Menu": <Kid cartItem={setSelectedItems} />, 
-    'Sushi & Sashimi Combo': <Com cartItem={setSelectedItems} />, 
-    'Rolls': <Roll cartItem={setSelectedItems} />, 
-    'Kuma Special Rolls': <Spe cartItem={setSelectedItems} />, 
-    'Side': <Side cartItem={setSelectedItems} />, 
-    'Alcoholic Beverage': <Bev cartItem={setSelectedItems} />, 
-    'Beverage & Dessert': <Des cartItem={setSelectedItems} />, 
-
+    'Appetizer': <App setItem={setItem} dispatch={() => dispatch('add')} />, 
+    'Nigiri': <Nigi setItem={setItem} dispatch={() => dispatch('add')} />, 
+    'Street Food': <Street setItem={setItem} dispatch={() => dispatch('add')} />,
+    'Kuma Bento Box': <Ben setItem={setItem} dispatch={() => dispatch('add')} />,  
+    'Entrée': <Ent setItem={setItem} dispatch={() => dispatch('add')} />, 
+    "Kids' Menu": <Kid setItem={setItem} dispatch={() => dispatch('add')} />, 
+    'Sushi & Sashimi Combo': <Com setItem={setItem} dispatch={() => dispatch('add')} />, 
+    'Rolls': <Roll setItem={setItem} dispatch={() => dispatch('add')} />, 
+    'Kuma Special Rolls': <Spe setItem={setItem} dispatch={() => dispatch('add')} />, 
+    'Side': <Side setItem={setItem} dispatch={() => dispatch('add')} />, 
+    'Alcoholic Beverage': <Bev setItem={setItem} dispatch={() => dispatch('add')} />, 
+    'Beverage & Dessert': <Des setItem={setItem} dispatch={() => dispatch('add')} />, 
   }
 
   //jsx container
@@ -60,7 +74,7 @@ const RosevilleMenu = () => {
         {categories}
       </div>
 
-      {/* <Cart cartItem={setSelectedItems} ></Cart> */}
+      {/* <Cart items={items} setItem={setItem} dispatch={() => dispatch('remove')} ></Cart> */}
 
       <Link to='/menu'>
         <button id='back-btn'>Back</button>

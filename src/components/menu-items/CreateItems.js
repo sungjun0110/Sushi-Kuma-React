@@ -1,11 +1,11 @@
 import React from 'react';
 import Item from './Content';
 
-const CreateItems = ( title, items, onClick ) => {
+const CreateItems = ( title, items, props ) => {
     let itemCompnents = [];
 
     for (const [itemName, value] of Object.entries(items)) {
-        itemCompnents.push(<Item itemName={itemName} description={value[0]} price={value[1]} onClick={onClick} />);
+        itemCompnents.push(<Item itemName={itemName} description={value[0]} price={value[1]} setItem={props.setItem} dispatch={props.dispatch} />);
     }
 
     return (
