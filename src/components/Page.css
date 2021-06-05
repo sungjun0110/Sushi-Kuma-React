@@ -3,24 +3,25 @@ h1 {
 }
 
 #page {
-  height: calc(95vh - 230px);
+  height: calc(100vh - 230px);
   min-width: 1280px;
 }
 
 #title {
-  margin-top: 140px;
   color: white;
   font-family: "Courier New", Courier, monospace;
   font-size: 35px;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 
-.menu-div {
-  height: calc(100vh - 450px);
+.page {
+  height: calc(100vh - 130px);
   overflow: auto;
   scrollbar-width: none;
 }
 
-.menu-div::-webkit-scrollbar {
+.page::-webkit-scrollbar {
   display: none;
 }
 
@@ -255,12 +256,7 @@ h1 {
 
   /* menu mobile version */
   #title {
-    margin-top: 90px;
     font-size: 25px;
-  }
-
-  .menu-div {
-    height: calc(100vh - 300px);
   }
 
   #main-nav {

@@ -14,7 +14,8 @@ import Roll from '../menu-items/Roseville/Rolls';
 import Side from '../menu-items/Roseville/Sides';
 import Spe from '../menu-items/Roseville/SpecialRolls';
 import Com from '../menu-items/Roseville/SushiCombo';
-import Ben from '../menu-items/Roseville/Bento';
+import DinnerBento from '../menu-items/Roseville/DinnerBento';
+import LunchBento from '../menu-items/Roseville/LunchBento';
 
 import Cart from '../cart/Cart';
 
@@ -61,24 +62,26 @@ const RosevilleMenu = () => {
 
   return (
     <>
-      <div id='title'>
-        <h3>
-          Roseville
-        </h3>
-      </div>
-      <div className='menu-div'>
+      <div className='page'>
+        <div id='title'>
+          <h3>
+            Roseville
+          </h3>
+        </div>
         <div className='warning'>
           <p>*Consuming raw or undercooked meats, poultry, seafood, shellfish, or eggs may increase your risk of foodborne illness.
           <br />*Our menu and prices are subject to change.<br />*18% gratuity will be added for parties of six or more.</p>
         </div>
         {categories}
+
+        <Link to='/menu'>
+          <button id='back-btn'>Back</button>
+        </Link>
       </div>
 
       {/* <Cart items={items} setItem={setItem} dispatch={() => dispatch('remove')} ></Cart> */}
 
-      <Link to='/menu'>
-        <button id='back-btn'>Back</button>
-      </Link>
+      
     </>
   );
 }

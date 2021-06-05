@@ -7,7 +7,7 @@
 #noteBtn {
     background-color: rgba(191,26,4,1);
     position: fixed;
-    bottom: 170px;
+    bottom: 100px;
     right: 80px;
     padding: 15px;
     border-radius: 100%;
@@ -32,9 +32,9 @@
     border: 2px solid #ddd;
     background-color: rgb(37,37,37,0.9);
     border-radius: 80px;
-    bottom: 260px;
+    bottom: 190px;
     right: 30px;
-    height: 600px;
+    height: 70vh;
     width: 500px;
     z-index: 1;
 }
@@ -45,11 +45,11 @@
 
 #cart-content.active{
     margin: auto;
-    height: 550px;
+    height: calc(70vh - 50px);
     overflow: auto;
     border-radius: 60px;
     width: 450px;
-    margin: 20px auto;
+    margin: 25px auto;
 }
 
 #cart-content::-webkit-scrollbar {

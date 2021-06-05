@@ -6,7 +6,6 @@ const clickHandler = ( onClick, setClicked, btnClicked, btnName, setActiveDir ) 
   onClick();
   setClicked(isClicked => true);
   btnClicked[1](btnName);
-  // setActiveDir(btnName);
 }
 
 const Navbtn = ( props ) => {
@@ -30,7 +29,7 @@ const Navbtn = ( props ) => {
   });
 
   return (
-    <Link style={{margin: '0px 10px'}} to={btnVal}>
+    <Link style={{margin: '0px 10px', height: '50px'}} to={btnVal}>
       <button id='navBtn'
         className={classNames}
         onClick={() => clickHandler(props.onClick, setClicked, props.btnClicked, props.value, props.setActiveDir)} >

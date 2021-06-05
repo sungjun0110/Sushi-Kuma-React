@@ -12,7 +12,8 @@ import Roll from '../menu-items/Eldorado/Rolls';
 import Side from '../menu-items/Eldorado/Sides';
 import Spe from '../menu-items/Eldorado/SpecialRolls';
 import Com from '../menu-items/Eldorado/SushiCombo';
-import Ben from '../menu-items/Eldorado/Bento';
+import DinnerBento from '../menu-items/Eldorado/DinnerBento';
+import LunchBento from '../menu-items/Eldorado/LunchBento';
 
 import Cart from '../cart/Cart';
 
@@ -57,24 +58,22 @@ const EldoradoMenu = () => {
 
   return (
     <>
-      <div id='title'>
-        <h3>
-          El Dorado Hills
-        </h3>
-      </div>
+      <div className='page'>
+        <div id='title'>
+            El Dorado Hills
+        </div>
 
-      <div className='menu-div'>
         <div className='warning'>
           <p>*Consuming raw or undercooked meats, poultry, seafood, shellfish, or eggs may increase your risk of foodborne illness.<br />*Our menu and prices are subject to change.<br />*18% gratuity will be added for parties of six or more.</p>
         </div>
         {categories}
+
+        <Link to='/menu'>
+          <button id='back-btn'>Back</button>
+        </Link>
       </div>
 
       {/* <Cart items={items} setItem={setItem} dispatch={() => dispatch('remove')} ></Cart> */}
-
-      <Link to='/menu'>
-        <button id='back-btn'>Back</button>
-      </Link>
     </>
   );
 }
