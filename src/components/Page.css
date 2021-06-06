@@ -2,21 +2,7 @@ h1 {
   color: white;
 }
 
-#page {
-  height: calc(100vh - 230px);
-  min-width: 1280px;
-}
-
-#title {
-  color: white;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 35px;
-  margin-bottom: 10px;
-  font-weight: bold;
-}
-
 .page {
-  height: calc(100vh - 130px);
   overflow: auto;
   scrollbar-width: none;
 }
@@ -25,40 +11,12 @@ h1 {
   display: none;
 }
 
-.menu-page,
-.location-page {
-  height: calc((var(--vh, 1vh) * 90) - 180px);
-  width: 100vw;
-}
-
-.menu-page a {
-  font-size: 1.5vh;
-}
-
-#back-btn {
-  margin-top: 30px;
-  background: rgba(0,0,0,0);
-  border: 2px solid white;
-  color: white;
-  border-radius: 5px;
-  font-size: 25px;
-  font-family: "Courier New", Courier, monospace;
-  transition: 0.4s;
-  outline: none;
-}
-
-#back-btn:hover {
-  color: rgba(191,26,4,1);
-  border: 2px solid rgba(191,26,4,1);
-}
-
-
 .location-selector{
-  height: calc(90vh - 200px);
-  padding-top: 30vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  height: calc(var(--vh, 1vh) * 100);
 }
 
 .location-selector a {
@@ -113,21 +71,6 @@ h1 {
   border: none;
 }
 
-/* .menu-content {
-  text-align: left;
-  height: 0px;
-  color: transparent;
-  border-bottom: 2px solid #bf1a04;
-  line-height: 0;
-  transition: 0.4s;
-}
-
-.menu-content.isActive {
-  height: auto;
-  line-height: 1;
-  color: white;
-} */
-
 .location-page {
   height: calc((var(--vh, 1vh) * 90) - 180px);
 }
@@ -136,125 +79,13 @@ h1 {
   transition-duration: 1s;
 }
 
-.item-div {
-  background: #252525;
-  border: 2px solid #fff;
-  border-radius: 100px;
-  width: 70%;
-  margin: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 0px 30px 35px 30px;
-}
-
-.item-title {
-  font-size: 40px;
-  margin-top: 35px;
-  margin-bottom: 10px;
-  font-weight: bold;
-  text-decoration-style: solid;
-  color: #ddd;
-}
-
-.items {
-  display:flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-}
-
-.bento-items {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-}
-
-.bento-items .item {
-  margin: 5px 0;
-  color: #ddd;
-  font-size: 20px;
-}
-
-.item {
-  margin: 5px ;
-  max-width: 400px;
-  border: none;
-  border-radius: 100px;
-  flex: 1 1 400px;
-  background-color: #333;
-  padding: 15px 15px;
-}
-
-.item:hover {
-  background-color: rgba(150,26,4,1)
-}
-
-.item::after {
-  background-color: #333;
-  transition: all 0.4s;
-}
-
-.item h4 {
-  margin: 0;
-  font-style: italic;
-  font-size: 25px;
-  font-weight: normal;
-  color: #ddd;
-}
-
-.item p {
-  font-size: 20px;
-  color: #ddd;
-  margin: 0px;
-}
-
-#nigiri-content .item {
-  flex: 1 1 200px;
-}
-
-.nigiri-warning {
-  color: #ddd;
-}
-
-.bento-description {
-  color: #ddd;
-  font-size: 20px;
-  margin: 10px;
-}
-
-.discount{
-  margin-top: 20px;
-  font-size: 50px;
-  color: #ddd;
-}
-
-.roll-extra {
-  margin-top: 50px;
-  padding: 0 50px 30px 50px;
-  color: #ddd;
-}
-
-.extras {
-  border: 1px solid #252525;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-.extra {
-  margin: 5px 20px;
-  font-size: 20px;
-}
-
-/* Mobile CSS*/
-
-@media only screen and (max-width: 550px) {
-  /* header: 80px font-size for back button: 1.5vh double border line: 8px footer: 80px page-title: 5vh*/
-  /* Header */
-  #page {
-    min-width: auto;
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .page {
+    margin-top: 3.5rem;
+    height: calc(100vh - 6rem);
   }
 
-  /* menu mobile version */
   #title {
     font-size: 25px;
   }
@@ -278,14 +109,8 @@ h1 {
     font-size: 20px;
   }
 
-  /* Menu mobile */
-
   .menu-category {
     font-size: 20px;
-  }
-
-  .location-selector{
-    height: calc(var(--vh, 1vh) * 100);
   }
 
   .location-selector button {
@@ -302,57 +127,36 @@ h1 {
   .location-page {
     height: calc(var(--vh, 1vh) * 100);
   }
+}
 
-  .item-div {
-    border-radius: 80px;
-    width: 90%;
-    padding: 0px 5px 35px 5px;
-    margin: auto;
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .page {
+    margin-top: 4rem;
+    height: calc(100vh - 8rem);
   }
+}
 
-  .item-title {
-    font-size: 30px;
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .page {
+    margin-top: 4rem;
+    height: calc(100vh - 8.5rem);
   }
+}
 
-  .item {
-    border-radius: 80px;
-
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .page {
+    margin-top: 5rem;
+    height: calc(100vh - 10rem);
   }
+}
 
-  .item h4 {
-    font-size: 22px;
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .page {
+    margin-top: 6.5rem;
+    height: calc(100vh - 11.8rem);
   }
-
-  .item p {
-    font-size: 15px;
-  }
-
-  .discount {
-    font-size: 25px;
-  }
-
-  .menu-page a {
-    font-size: 1.5vh;
-  }
-
-  #menu-container {
-    height: calc(var(--vh, 1vh) * 100);
-  }
-
-  #roseville-menu-content.active {
-    position: relative;
-    height: calc((var(--vh, 1vh) * 90) - 210px);
-    margin-bottom: 10px;
-  }
-
-  #eldorado-menu-content.active {
-    position: relative;
-    height: calc((var(--vh, 1vh) * 90) - 210px);
-    margin-bottom: 10px;
-  }
-
-  #back-btn {
-    font-size: 15px;
-  }
-
 }

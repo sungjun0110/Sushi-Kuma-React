@@ -7,7 +7,7 @@ const Bento = () => {
 
       <div className="bento-description">Lunch: &nbsp; 12.50<br /><span style={{fontSize: '18px'}}>* Served with soup, salad & rice *<br />* Duplicate choices charge extra $ 1*<br />* No substitution on bento box *</span></div>
       
-      <div className="bento-items">
+      <div className="items">
         <div className="item">Beef Teriyaki</div>
         <div className="item">Chicken Teriyaki</div>
         <div className="item">Salmon Teriyaki</div>

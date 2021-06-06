@@ -98,67 +98,67 @@ const SpecialRolls = ( props ) => {
         <h3>Would you like to add toppings?</h3>
         <div className="extras">
           <div className="extra">
-            Masago | 1.00
+            Masago <br /> 1.00
           </div>
 
           <div className="extra">
-            Cucumber | 1.00
+            Cucumber <br /> 1.00
           </div>
 
           <div className="extra">
-            Crabmeat | 1.00
+            Crabmeat <br /> 1.00
           </div>
 
           <div className="extra">
-            Japapeno | 1.00
+            Japapeno <br /> 1.00
           </div>
 
           <div className="extra">
-            Soy Wrap | 1.50
+            Soy Wrap <br /> 1.50
           </div>
 
           <div className="extra">
-            Cream Cheese | 1.00
+            Cream Cheese <br /> 1.00
           </div>
 
           <div className="extra">
-            Spicy Tuna | 1.50
+            Spicy Tuna <br /> 1.50
           </div>
 
           <div className="extra">
-            Extra Fish | 2.50
+            Extra Fish <br /> 2.50
           </div>
 
           <div className="extra">
-            Real Crab | 2.50
+            Real Crab <br /> 2.50
           </div>
 
           <div className="extra">
-            Crunchy | 1.00
+            Crunchy <br /> 1.00
           </div>
 
           <div className="extra">
-            Avocado | 1.00
+            Avocado <br /> 1.00
           </div>
 
           <div className="extra">
-            Deep-fried Shrimp | 1.50
+            Deep-fried Shrimp <br /> 1.50
           </div>
 
           <div className="extra">
-            Spicy Crabmeat | 1.00
+            Spicy Crabmeat <br /> 1.00
           </div>
 
           <div className="extra">
-            Deep-fried Asparagus | 1.00
+            Deep-fried Asparagus <br /> 1.00
           </div>
 
           <div className="extra">
-            Cooked Shrimp | 1.50
+            Cooked Shrimp <br /> 1.50
           </div>
 
           <div className="extra">
-            Deep-fry your roll | 1.00
+            Deep-fry your roll <br /> 1.00
           </div>
         </div>
       </div>
