@@ -29,7 +29,7 @@ const Navbtn = ( props ) => {
   });
 
   return (
-    <Link style={{margin: '0px 10px', height: '50px'}} to={btnVal}>
+    <Link to={btnVal}>
       <button id='navBtn'
         className={classNames}
         onClick={() => clickHandler(props.onClick, setClicked, props.btnClicked, props.value, props.setActiveDir)} >
