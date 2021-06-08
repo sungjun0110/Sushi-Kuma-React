@@ -16,13 +16,11 @@ import {
 const Page = ( props ) => (
   <Switch>
       <Route path='/' exact component={Home} />
-    <div id='page'>
       <Route path='/menu' exact component={Menu} />
       <Route path='/findus' component={FindUs} />
       <Route path='/more' component={More} />
       <Route path='/eldoradohills' component={EdhMenu} />
       <Route path='/roseville' component={RosevilleMenu} />
-    </div>
   </Switch>
 );
 

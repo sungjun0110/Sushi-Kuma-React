@@ -1,8 +1,7 @@
 #stores {
     display: flex;
-    flex-flow: column wrap;
     justify-content: space-evenly;
-    height: calc(100vh - 110px);
+    align-items: center;
     overflow: auto;
 }
 
@@ -12,12 +11,10 @@
 
 .store {
     color: white;
-    width: 50vw;
     font-family: "Courier New", Courier, monospace;
 }
 
 .store img{
-    width: 30vw;
     height: auto;
 }
 
@@ -25,17 +22,87 @@
     height: auto;
 }
 
-@media only screen and (max-width: 550px) {
-    #stores {
-        flex-flow: row wrap;
-        height: calc(100vh - 120px);
-    }
-    
-    .store {
-        width: 90vw;
-    }
-    
-    .store img{
-        width: 80vw;
-    }
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #stores {
+    flex-flow: row wrap;
+    margin-top: 3.5rem;
+    height: calc(100vh - 6rem);
+  }
+  
+  .store {
+      width: 90vw;
+  }
+  
+  .store img{
+      width: 80vw;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #stores {
+    height: calc(100vh - 8rem);
+    margin-top: 4rem;
+    flex-flow: row wrap;
+
+  }
+  
+  .store {
+      width: 95vw;
+  }
+  
+  .store img{
+      width: 80vw;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #stores {
+    height: calc(100vh - 8.5rem);
+    margin-top: 4rem;
+    flex-flow: row wrap;
+  }
+  
+  .store {
+    width: 100vw;
+  }
+
+  .store img{
+    width: 25vw;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #stores {
+    margin-top: 4.5rem;
+    height: calc(100vh - 10rem);
+  }
+  
+  .store {
+    width: 45vw;
+  }
+
+  .store img{
+    width: 25vw;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  #stores {
+    margin-top: 5rem;
+    height: calc(100vh - 11.8rem);
+    justify-content: space-evenly;
+  }
+  
+  .store {
+      width: 45vw;
+  }
+  
+  .store img{
+      width: 25vw;
+  }
 }

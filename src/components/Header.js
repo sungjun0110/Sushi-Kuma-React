@@ -16,17 +16,15 @@ const Header = ( ) => {
 
   return (
     <>
-      <div id='header-logo' className={isActive? 'active' : null}>
-        <Link to='/'>
-          <img
-            id="logo-img"
-            className={isActive? 'active' : null}
-            src='images/kuma-logo.png' 
-            alt="logo"
-            onClick={()=>setActive(isActive => false)}
-          />
-        </Link>
-      </div>
+      <Link to='/'>
+        <img
+          id="logo-img"
+          className={isActive? 'active' : null}
+          src='images/kuma-logo.png' 
+          alt="logo"
+          onClick={()=>setActive(isActive => false)}
+        />
+      </Link>
       <Navbar setLogoActive={setActive} isLogoActive={isActive} />
     </>
   );
