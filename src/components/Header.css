@@ -2,15 +2,17 @@
   position: absolute;
   transition: 0.4s;
   z-index: 10000;
-  left: calc((var(--vw, 1vw) * 50) - 15vh);
-  top: 15vh;
+  left: 50vw;
+  top: 40vh;
   width: 30vh;
   height: 30vh;
+  transform: translateX(-50%) translateY(-50%);
 }
 
 #logo-img.active {
   left: 0;
   top: 0;
+  transform: translateX(0%) translateY(0%);
 }
 
 /* Extra small devices (phones, 600px and down) */
