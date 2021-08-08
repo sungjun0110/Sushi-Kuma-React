@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import './HeaderNavBtn.css';
 import { Link } from "react-router-dom";
+import { NavActiveContext } from '../../App';
 
 const clickHandler = ( onClick, setClicked, btnClicked, btnName ) => {
   onClick();
@@ -11,6 +12,7 @@ const clickHandler = ( onClick, setClicked, btnClicked, btnName ) => {
 const Navbtn = ( props ) => {
   const [isClicked, setClicked] = useState(false);
   const [classNames, setClassNames] = useState('');
+  const [isNavActive, setIsNavActive] = useContext(NavActiveContext);
 
   let btnVal = '/' + props.value.toLowerCase().replace(/ /g, '');
 
