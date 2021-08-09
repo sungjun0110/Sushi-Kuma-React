@@ -17,8 +17,8 @@ const Navbtn = ( props ) => {
   let btnVal = '/' + props.value.toLowerCase().replace(/ /g, '');
 
   useEffect(() => {
-    if (props.isLogoActive) {
-      setClassNames(`${props.btnActiveStatus? "active" : null} ${(isClicked && props.value == props.btnClicked[0])? "clicked" : null}`);
+    if (isNavActive) {
+      setClassNames(`active ${(isClicked && props.value == props.btnClicked[0])? "clicked" : null}`);
     } else {
       setClassNames('');
     }

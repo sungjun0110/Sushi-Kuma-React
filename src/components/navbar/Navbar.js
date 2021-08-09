@@ -43,7 +43,7 @@ const Navbar = ( props ) => {
       </div>
 
       {/* bottom nav */}
-      <div className={isBtnActive? 'main-nav active' : 'main-nav' }>
+      <div className={isNavActive? 'main-nav active' : 'main-nav' }>
         <Navbtn
           value='Menu'
           setActiveDir={props.setActiveDir} 
