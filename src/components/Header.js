@@ -1,16 +1,18 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import Navbar from './navbar/Navbar';
 import './Header.css';
 import {
   Link
 } from "react-router-dom";
 
+import { NavActiveContext } from '../App';
+
 const Header = ( ) => {
-  const [isActive, setActive] = useState(false);
+  const [isNavActive, setIsNavActive] = useContext(NavActiveContext);
 
   useEffect(() => {
-    if (window.location.pathname !== "/" && isActive === false) {
-      setActive(isActive => true);
+    if (window.location.pathname !== "/" && isNavActive === false) {
+      setIsNavActive(true);
     }
   });
 
@@ -19,13 +21,13 @@ const Header = ( ) => {
       <Link to='/'>
         <img
           id="logo-img"
-          className={isActive? 'active' : null}
+          className={isNavActive? 'active' : null}
           src='images/kuma-logo.png' 
           alt="logo"
-          onClick={()=>setActive(isActive => false)}
+          onClick={()=>setIsNavActive(!isNavActive)}
         />
       </Link>
-      <Navbar setLogoActive={setActive} isLogoActive={isActive} />
+      <Navbar />
     </>
   );
 }
