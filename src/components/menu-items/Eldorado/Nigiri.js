@@ -30,7 +30,7 @@ const Nigiri = ( props ) => {
         }, props)}
         
         <div className="nigiri-warning">
-          <p>* Extra order: Uzura (Quail Egg).....3.00 *</p>
+          <p style={{color: 'white'}}>* Extra order: Uzura (Quail Egg).....3.00 *</p>
         </div>
     </div>
   );
