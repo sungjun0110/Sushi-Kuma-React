@@ -1,4 +1,4 @@
-import React, { useReducer, useState, useEffect } from 'react';
+import React, { useReducer, useState } from 'react';
 import Category from '../menu-items/Category';
 import { Link } from 'react-router-dom';
 
@@ -14,8 +14,6 @@ import Spe from '../menu-items/Eldorado/SpecialRolls';
 import Com from '../menu-items/Eldorado/SushiCombo';
 import DinnerBento from '../menu-items/Eldorado/DinnerBento';
 import LunchBento from '../menu-items/Eldorado/LunchBento';
-
-import Cart from '../cart/Cart';
 
 const EldoradoMenu = () => {
   const reducer = (items, action) => {
@@ -33,7 +31,7 @@ const EldoradoMenu = () => {
 
   const [itemId, setItemId] = useState(0);
   const [item, setItem] = useState({});
-  const [items, dispatch] = useReducer(reducer, []);
+  const [, dispatch] = useReducer(reducer, []);
 
   // categori name : page element
   const cateDict = {
@@ -54,7 +52,7 @@ const EldoradoMenu = () => {
   const categories = [];
 
   for (const [catName, page] of Object.entries(cateDict)) {
-    categories.push(<Category name={catName}>{page}</Category>);
+    categories.push(<Category name={catName} key={catName}>{page}</Category>);
   }
 
   return (
@@ -73,8 +71,6 @@ const EldoradoMenu = () => {
           <button id='back-btn'>Back</button>
         </Link>
       </div>
-
-      {/* <Cart items={items} setItem={setItem} dispatch={() => dispatch('remove')} ></Cart> */}
     </>
   );
 }

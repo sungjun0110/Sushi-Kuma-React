@@ -17,8 +17,6 @@ import Com from '../menu-items/Roseville/SushiCombo';
 import DinnerBento from '../menu-items/Roseville/DinnerBento';
 import LunchBento from '../menu-items/Roseville/LunchBento';
 
-import Cart from '../cart/Cart';
-
 const RosevilleMenu = () => {
   const reducer = (items, action) => {
     switch (action) {
@@ -35,7 +33,7 @@ const RosevilleMenu = () => {
 
   const [itemId, setItemId] = useState(0);
   const [item, setItem] = useState({});
-  const [items, dispatch] = useReducer(reducer, []);
+  const [, dispatch] = useReducer(reducer, []);
 
   // categori name : page element
   const cateDict = {

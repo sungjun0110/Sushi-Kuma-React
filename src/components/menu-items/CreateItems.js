@@ -5,7 +5,7 @@ const CreateItems = ( title, items, props ) => {
     let itemComponents = [];
 
     for (const [itemName, value] of Object.entries(items)) {
-        itemComponents.push(<Item itemName={itemName} description={value[0]} price={value[1]} setItem={props.setItem} dispatch={props.dispatch} />);
+        itemComponents.push(<Item itemName={itemName} description={value[0]} price={value[1]} setItem={props.setItem} dispatch={props.dispatch} key={itemName} />);
     }
 
     return (

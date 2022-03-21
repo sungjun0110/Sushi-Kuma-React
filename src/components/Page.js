@@ -6,7 +6,6 @@ import FindUs from './pages/FindUs';
 import More from './pages/More';
 import EdhMenu from './pages/EldoradoMenu';
 import RosevilleMenu from './pages/RosevilleMenu';
-import Reservation from './pages/Reservation';
 
 import {
   Switch,

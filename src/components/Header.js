@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext } from 'react';
+import React, { useEffect, useContext } from 'react';
 import Navbar from './navbar/Navbar';
 import './Header.css';
 import {

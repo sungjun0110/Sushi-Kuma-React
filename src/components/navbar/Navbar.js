@@ -13,7 +13,7 @@ const Navbar = ( props ) => {
   }
 
   useEffect(() => {
-    if (window.location.pathname != "/" && isNavActive == false) {
+    if (window.location.pathname !== "/" && isNavActive === false) {
       setIsNavActive(true);
     }
   });

@@ -18,14 +18,14 @@ const Navbtn = ( props ) => {
 
   useEffect(() => {
     if (isNavActive) {
-      setClassNames(`active ${(isClicked && props.value == props.btnClicked[0])? "clicked" : null}`);
+      setClassNames(`active ${(isClicked && props.value === props.btnClicked[0])? "clicked" : null}`);
     } else {
       setClassNames('');
     }
 
     let address = window.location.pathname.slice(1);
-    if (address == 'roseville' || address == 'eldoradohills') address = 'menu';
-    if (address == props.value.toLowerCase().replace(/ /g, '')) {
+    if (address === 'roseville' || address === 'eldoradohills') address = 'menu';
+    if (address === props.value.toLowerCase().replace(/ /g, '')) {
       clickHandler(props.onClick, setClicked, props.btnClicked, props.value);
     }
   });

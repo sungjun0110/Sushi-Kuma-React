@@ -1,7 +1,6 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useEffect } from 'react';
 import './HeaderNavBtn.css';
 import { Link } from "react-router-dom";
-import { NavActiveContext } from '../../App';
 
 const clickHandler = ( onClick, setClicked, btnClicked, btnName ) => {
   onClick();
@@ -12,23 +11,22 @@ const clickHandler = ( onClick, setClicked, btnClicked, btnName ) => {
 const Navbtn = ( props ) => {
   const [isClicked, setClicked] = useState(false);
   const [classNames, setClassNames] = useState('');
-  const [isNavActive, setIsNavActive] = useContext(NavActiveContext);
 
   let btnVal = '/' + props.value.toLowerCase().replace(/ /g, '');
 
   useEffect(() => {
     if (props.isLogoActive) {
-      setClassNames(`${props.btnActiveStatus? "active" : null} ${(isClicked && props.value == props.btnClicked[0])? "clicked" : null}`);
+      setClassNames(`${props.btnActiveStatus? "active" : null} ${(isClicked && props.value === props.btnClicked[0])? "clicked" : null}`);
     } else {
       setClassNames('');
     }
 
     let address = window.location.pathname.slice(1);
-    if (address == 'roseville' || address == 'eldoradohills') address = 'menu';
-    if (address == props.value.toLowerCase().replace(/ /g, '')) {
+    if (address === 'roseville' || address === 'eldoradohills') address = 'menu';
+    if (address === props.value.toLowerCase().replace(/ /g, '')) {
       clickHandler(props.onClick, setClicked, props.btnClicked, props.value);
     }
-  });
+  }, [isClicked]);
 
   return (
     <Link style={{margin: '0px 10px'}} to={btnVal}>

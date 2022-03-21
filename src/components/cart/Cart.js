@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './Cart.css';
 import { ReactComponent as Note } from './notes.svg';
 import Item from './CartItem';
