@@ -12,9 +12,9 @@ const Dessert = ( props ) => {
           "Fruit Juice" : ["Apple, Orange", "2.95"], 
           "Sparkling Water" : ["s. Pellegrino", "2.95"], 
           "Iced Tea" : ["", "2.95"], 
-          "Green Iced Tea" : ["", "2.75"], 
+          "Green Iced Tea" : ["", "2.95"], 
           "Hot Tea" : ["Genmai", "1.99"], 
-          "Mochi Ice cream" : ["strawberry, chocolate, mango", "4.50"], 
+          "Mochi Ice cream" : ["strawberry, chocolate, mango", "5.50"], 
           }, 
           props
         )}

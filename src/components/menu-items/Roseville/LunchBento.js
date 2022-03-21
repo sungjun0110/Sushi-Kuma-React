@@ -6,7 +6,7 @@ const LunchBento = () => {
         <div className="item-div">
             <div className="item-title">Lunch Bento Box</div>
 
-            <div className="bento-description">Lunch: 13.50<br /><span style={{fontSize: '20px'}}>* Served with soup, salad & rice *<br />* Duplicate choices charge extra $ 1*<br />* No substitution on bento box *</span></div>
+            <div className="bento-description">Lunch: 14.95<br /><span style={{fontSize: '20px'}}>* Served with soup, salad & rice *<br />* Duplicate choices charge extra $ 1*<br />* No substitution on bento box *</span></div>
             
             <div className="items">
                 <div className="item">Beef Teriyaki</div>

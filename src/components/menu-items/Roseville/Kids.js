@@ -7,10 +7,10 @@ const Kids = ( props ) => {
         {CreateItems(
           "Kids' Menu", 
           {
-          "Teddy Bear 1" : ["Chicken teriyaki or Sesame chicken, California roll – 4pcs, gyoza - 2pcs", "10.95"], 
-          "Teddy Bear 2" : ["Mixed tempura, California roll – 4pcs, gyoza - 2pcs", "10.95"], 
-          "Teddy Bear 3" : ["Chicken Katsu or Ton Katsu, California – 4pcs, gyoza - 2pcs", "10.95"], 
-          "Kid’s Udon" : ["Thick noodle soup", "9.95"], 
+          "Teddy Bear 1" : ["Chicken teriyaki or Sesame chicken, California roll – 4pcs, gyoza - 2pcs", "11.95"], 
+          "Teddy Bear 2" : ["Mixed tempura, California roll – 4pcs, gyoza - 2pcs", "11.95"], 
+          "Teddy Bear 3" : ["Chicken Katsu or Ton Katsu, California – 4pcs, gyoza - 2pcs", "11.95"], 
+          "Kid’s Udon" : ["Thick noodle soup", "10.95"], 
           }, 
           props
         )}
