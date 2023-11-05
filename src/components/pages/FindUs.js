@@ -35,7 +35,7 @@ const FindUs = (props) => (
                     <br />
                     Sun-Thur: 11:30 am - 9:00 pm
                     <br />
-                    Fri-Sat: 11:30 am - 10 pm
+                    Fri-Sat: 11:30 am - 9:30 pm
                     <br />
                     (916) 788-1999
                 </p>
