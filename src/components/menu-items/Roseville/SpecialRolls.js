@@ -35,7 +35,7 @@ const SpecialRolls = (props) => {
                             "19.99"
                         ],
                         Spider: [
-                            "Deep-fried soft shell crab, cucumber, avocado, crabmeat | masago | unagi sauce | 5pcs",
+                            "Deep-fried soft shell crab, cucumber, avocado, crabmeat | unagi sauce | 5pcs",
                             "18.50"
                         ],
                         "Tempura Crunchy": [
