@@ -1,12 +1,20 @@
-import React from 'react';
+import React from "react";
 
 const DinnerBento = () => {
     return (
         <div className="item-div">
             <div className="item-title">Dinner Bento Box</div>
 
-            <div className="bento-description">Dinner: 19.95<br /><span style={{fontSize: '20px'}}>* Served with soup, salad & rice *<br />* Duplicate choices charge extra $ 1*<br />* No substitution on bento box *</span></div>
-            
+            <div className="bento-description">
+                Dinner: 21.95
+                <br />
+                <span style={{ fontSize: "20px" }}>
+                    * Served with soup, salad & rice *<br />* Duplicate choices
+                    charge extra $ 1*
+                    <br />* No substitution on bento box *
+                </span>
+            </div>
+
             <div className="items">
                 <div className="item">Beef Teriyaki</div>
                 <div className="item">Chicken Teriyaki</div>
@@ -22,10 +30,12 @@ const DinnerBento = () => {
                 <div className="item">Gyoza - 4pc</div>
                 <div className="item">Croquette – 2pcs</div>
                 <div className="item">Bulgogi</div>
-                <div className="item">Mixed Tempura (shrimp - 1pc , vegetable - 5pcs)</div>
+                <div className="item">
+                    Mixed Tempura (shrimp - 1pc , vegetable - 5pcs)
+                </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default DinnerBento;
