@@ -1,39 +1,43 @@
-import React from 'react';
-import CreateItems from '../CreateItems';
+import React from "react";
+import CreateItems from "../CreateItems";
 
-const Nigiri = ( props ) => {
-  return(
-    <div className="item-div">
-      {CreateItems(
-        "Nigiri", 
-        {
-          "Albacore" : ["white tuna", "6.95"], 
-          "Ama-Ebi" : ["sweet shrimp", "8.95"], 
-          "Ebi" : ["cooked shrimp", "6.50"], 
-          "Escolar" : ["escolar", "6.95"], 
-          "Hamachi" : ["yellow tail", "6.95"], 
-          "Seared Sake" : ["seared salmon", "6.95"], 
-          "Hotate" : ["scallop", "6.95"], 
-          "Ika" : ["squid", "6.50"], 
-          "Ikura" : ["salmon roe", "6.50"], 
-          "Inari" : ["tofu wrap", "6.50"], 
-          "Kani" : ["snow crab", "7.95"], 
-          "Maguro" : ["tuna", "6.95"], 
-          "Masago" : ["smelt roe", "6.50"], 
-          "Saba" : ["mackerel", "6.95"], 
-          "Sake" : ["salmon", "6.95"], 
-          "Spicy Hotate" : ["spicy scallop", "6.95"], 
-          "Tako" : ["octopus", "6.50"], 
-          "Tamago" : ["sweet egg", "6.50"], 
-          "Tobiko" : ["flying fish roe", "6.50"], 
-          "Unagi" : ["fresh water eel", "6.95"], 
-        }, props)}
-        
-        <div className="nigiri-warning">
-          <p style={{color: 'white'}}>* Extra order: Uzura (Quail Egg).....3.00 *</p>
+const Nigiri = (props) => {
+    return (
+        <div className="item-div">
+            {CreateItems(
+                "Nigiri",
+                {
+                    Albacore: ["white tuna", "7.95"],
+                    "Ama-Ebi": ["sweet shrimp", "9.95"],
+                    Saba: ["mackerel", "7.95"],
+                    Ebi: ["cooked shrimp", "7.50"],
+                    Hamachi: ["yellow tail", "7.95"],
+                    Masago: ["smelt roe", "7.50"],
+                    Ika: ["squid", "7.50"],
+                    Inari: ["tofu wrap", "7.50"],
+                    Kani: ["snow crab", "8.95"],
+                    Maguro: ["tuna", "7.95"],
+                    Sake: ["salmon", "7.95"],
+                    "Seared Sake": ["seared salmon", "7.95"],
+                    Hotate: ["scallop", "7.95"],
+                    "Spicy Hotate": ["spicy scallop", "7.95"],
+                    Tako: ["octopus", "7.50"],
+                    Tamago: ["sweet egg", "7.50"],
+                    Escolar: ["escolar", "7.95"],
+                    Unagi: ["fresh water eel", "7.95"],
+                    Ikura: ["salmon roe", "7.50"],
+                    Tobiko: ["flying fish roe", "7.50"]
+                },
+                props
+            )}
+
+            <div className="nigiri-warning">
+                <p style={{ color: "white" }}>
+                    * Extra order: Uzura (Quail Egg).....3.00 *
+                </p>
+            </div>
         </div>
-    </div>
-  );
-}
+    );
+};
 
 export default Nigiri;
