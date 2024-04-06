@@ -1,9 +1,9 @@
 #title {
-  color: white;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 35px;
-  margin-bottom: 10px;
-  font-weight: bold;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 35px;
+    margin-bottom: 10px;
+    font-weight: bold;
 }
 
 .warning {
@@ -19,510 +19,518 @@
     margin: 15px 15px;
 }
 
+.scheduleWarning {
+    font-family: "Courier New", Courier, monospace;
+    color: yellow;
+    margin: auto;
+    margin-bottom: 1rem;
+    max-width: 1250px;
+    padding: 0px;
+}
+
 .menu-page,
 .location-page {
-  height: calc((var(--vh, 1vh) * 90) - 180px);
-  width: 100vw;
+    height: calc((var(--vh, 1vh) * 90) - 180px);
+    width: 100vw;
 }
 
 .menu-page a {
-  font-size: 1.5vh;
+    font-size: 1.5vh;
 }
 
 #back-btn {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  background: rgba(0,0,0,0);
-  border: 2px solid white;
-  color: white;
-  border-radius: 5px;
-  font-size: 25px;
-  font-family: "Courier New", Courier, monospace;
-  transition: 0.4s;
-  outline: none;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    background: rgba(0, 0, 0, 0);
+    border: 2px solid white;
+    color: white;
+    border-radius: 5px;
+    font-size: 25px;
+    font-family: "Courier New", Courier, monospace;
+    transition: 0.4s;
+    outline: none;
 }
 
 #back-btn:hover {
-  color: rgba(191,26,4,1);
-  border: 2px solid rgba(191,26,4,1);
+    color: rgba(191, 26, 4, 1);
+    border: 2px solid rgba(191, 26, 4, 1);
 }
 
 .item-div {
-  background: #252525;
-  margin: auto;
+    background: #252525;
+    margin: auto;
 }
 
 .item-title {
-  font-weight: bold;
-  text-decoration-style: solid;
-  color: #ddd;
+    font-weight: bold;
+    text-decoration-style: solid;
+    color: #ddd;
 }
 
 .items {
-  display:flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
 }
 
 .item {
-  border: none;
-  color: #ddd;
-  background-color: #333;
+    border: none;
+    color: #ddd;
+    background-color: #333;
 }
 
 .item:hover {
-  background-color: rgba(150,26,4,1)
+    background-color: rgba(150, 26, 4, 1);
 }
 
 .item h4 {
-  font-style: italic;
-  font-weight: normal;
-  color: #ddd;
+    font-style: italic;
+    font-weight: normal;
+    color: #ddd;
 }
 
 .item p {
-  color: #a9a9a9;
+    color: #a9a9a9;
 }
 
 .bento-description {
-  color: #ddd;
+    color: #ddd;
 }
 
-.discount{
-  color: #ddd;
+.discount {
+    color: #ddd;
 }
 
 .roll-extra {
-  color: #ddd;
+    color: #ddd;
 }
 
 .extras {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .item-div {
-    border: 2px solid #fff;
-    border-radius: 3.5rem;
-    width: 95%;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
+    .item-div {
+        border: 2px solid #fff;
+        border-radius: 3.5rem;
+        width: 95%;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
 
-  .item-title {
-    font-size: 2rem;
-    margin-top: 1rem;
-    margin-bottom: 10px;
-  }
+    .item-title {
+        font-size: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 10px;
+    }
 
-  .items {
-    padding: 0 5px;
-    margin-bottom: 1rem;
-  }
+    .items {
+        padding: 0 5px;
+        margin-bottom: 1rem;
+    }
 
-  .item {
-    margin: 5px;
-    border: none;
-    border-radius: 50px;
-    flex: 1 1 200px;
-    padding: 15px 15px;
-  }
+    .item {
+        margin: 5px;
+        border: none;
+        border-radius: 50px;
+        flex: 1 1 200px;
+        padding: 15px 15px;
+    }
 
-  .item h4 {
-    margin: 0;
-    font-style: italic;
-    font-size: 1.8rem;
-    font-weight: normal;
-    margin-bottom: .5rem;
-    color: #ddd;
-  }
-  
-  .item p {
-    font-size: 1.2rem;
-    margin: 0px;
-  }
-  
-  .bento-description {
-    color: #ddd;
-    font-size: 20px;
-    margin: 10px;
-  }
-  
-  .discount{
-    margin-top: 20px;
-    font-size: 50px;
-    color: #ddd;
-  }
-  
-  .roll-extra {
-    margin-top: 50px;
-    padding: 0 10px;
-    color: #ddd;
-  }
-  
-  .extras {
-    display: flex;
-    margin-bottom: 1.5rem;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-  
-  .extra {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 5px;
-    background-color: #333;
-    border-radius: 15px;
-    font-size: 20px;
-    flex: 1 1 150px;
-  }
+    .item h4 {
+        margin: 0;
+        font-style: italic;
+        font-size: 1.8rem;
+        font-weight: normal;
+        margin-bottom: 0.5rem;
+        color: #ddd;
+    }
 
-  .warning {
-      margin: 8px;
-  }
+    .item p {
+        font-size: 1.2rem;
+        margin: 0px;
+    }
+
+    .bento-description {
+        color: #ddd;
+        font-size: 20px;
+        margin: 10px;
+    }
+
+    .discount {
+        margin-top: 20px;
+        font-size: 50px;
+        color: #ddd;
+    }
+
+    .roll-extra {
+        margin-top: 50px;
+        padding: 0 10px;
+        color: #ddd;
+    }
+
+    .extras {
+        display: flex;
+        margin-bottom: 1.5rem;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .extra {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5px;
+        background-color: #333;
+        border-radius: 15px;
+        font-size: 20px;
+        flex: 1 1 150px;
+    }
+
+    .warning {
+        margin: 8px;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  .item-div {
-    border: 2px solid #fff;
-    border-radius: 3.5rem;
-    width: 95%;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
+    .item-div {
+        border: 2px solid #fff;
+        border-radius: 3.5rem;
+        width: 95%;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
 
-  .item-title {
-    font-size: 2rem;
-    margin-top: 1rem;
-    margin-bottom: 10px;
-  }
+    .item-title {
+        font-size: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 10px;
+    }
 
-  .items {
-    padding: 0 5px;
-    margin-bottom: 1rem;
-  }
+    .items {
+        padding: 0 5px;
+        margin-bottom: 1rem;
+    }
 
-  .item {
-    margin: 5px 8px;
-    border: none;
-    border-radius: 50px;
-    flex: 1 1 250px;
-    padding: 15px 15px;
-  }
+    .item {
+        margin: 5px 8px;
+        border: none;
+        border-radius: 50px;
+        flex: 1 1 250px;
+        padding: 15px 15px;
+    }
 
-  .item h4 {
-    margin: 0;
-    font-style: italic;
-    font-size: 1.8rem;
-    font-weight: normal;
-    margin-bottom: .5rem;
-    color: #ddd;
-  }
-  
-  .item p {
-    font-size: 1.2rem;
-    margin: 0px;
-  }
-  
-  .bento-description {
-    color: #ddd;
-    font-size: 20px;
-    margin: 10px;
-  }
-  
-  .discount{
-    margin-top: 20px;
-    font-size: 50px;
-    color: #ddd;
-  }
-  
-  .roll-extra {
-    margin-top: 50px;
-    padding: 0 10px;
-    color: #ddd;
-  }
-  
-  .extras {
-    display: flex;
-    margin-bottom: 1.5rem;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-  
-  .extra {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 5px;
-    background-color: #333;
-    border-radius: 15px;
-    font-size: 20px;
-    flex: 1 1 150px;
-  }
-  .warning {
-      margin: 8px;
-  }
+    .item h4 {
+        margin: 0;
+        font-style: italic;
+        font-size: 1.8rem;
+        font-weight: normal;
+        margin-bottom: 0.5rem;
+        color: #ddd;
+    }
+
+    .item p {
+        font-size: 1.2rem;
+        margin: 0px;
+    }
+
+    .bento-description {
+        color: #ddd;
+        font-size: 20px;
+        margin: 10px;
+    }
+
+    .discount {
+        margin-top: 20px;
+        font-size: 50px;
+        color: #ddd;
+    }
+
+    .roll-extra {
+        margin-top: 50px;
+        padding: 0 10px;
+        color: #ddd;
+    }
+
+    .extras {
+        display: flex;
+        margin-bottom: 1.5rem;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .extra {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5px;
+        background-color: #333;
+        border-radius: 15px;
+        font-size: 20px;
+        flex: 1 1 150px;
+    }
+    .warning {
+        margin: 8px;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .item-div {
-    border: 2px solid #fff;
-    border-radius: 3.5rem;
-    width: 95%;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
+    .item-div {
+        border: 2px solid #fff;
+        border-radius: 3.5rem;
+        width: 95%;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
 
-  .item-title {
-    font-size: 2rem;
-    margin-top: 1rem;
-    margin-bottom: 10px;
-  }
+    .item-title {
+        font-size: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 10px;
+    }
 
-  .items {
-    padding: 0 5px;
-    margin-bottom: 1rem;
-  }
+    .items {
+        padding: 0 5px;
+        margin-bottom: 1rem;
+    }
 
-  .item {
-    margin: 5px 10px;
-    border: none;
-    border-radius: 50px;
-    flex: 1 1 300px;
-    padding: 15px 15px;
-  }
+    .item {
+        margin: 5px 10px;
+        border: none;
+        border-radius: 50px;
+        flex: 1 1 300px;
+        padding: 15px 15px;
+    }
 
-  .item h4 {
-    margin: 0;
-    font-style: italic;
-    font-size: 1.8rem;
-    font-weight: normal;
-    margin-bottom: .5rem;
-    color: #ddd;
-  }
-  
-  .item p {
-    font-size: 1.2rem;
-    margin: 0px;
-  }
-  
-  .bento-description {
-    color: #ddd;
-    font-size: 20px;
-    margin: 10px;
-  }
-  
-  .discount{
-    margin-top: 20px;
-    font-size: 50px;
-    color: #ddd;
-  }
-  
-  .roll-extra {
-    margin-top: 50px;
-    padding: 0 10px;
-    color: #ddd;
-  }
-  
-  .extras {
-    display: flex;
-    margin-bottom: 1.5rem;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-  
-  .extra {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 5px;
-    background-color: #333;
-    border-radius: 15px;
-    font-size: 20px;
-    flex: 1 1 150px;
-  }
+    .item h4 {
+        margin: 0;
+        font-style: italic;
+        font-size: 1.8rem;
+        font-weight: normal;
+        margin-bottom: 0.5rem;
+        color: #ddd;
+    }
 
-  .warning {
-    
-      margin: 8px;
-  }
+    .item p {
+        font-size: 1.2rem;
+        margin: 0px;
+    }
+
+    .bento-description {
+        color: #ddd;
+        font-size: 20px;
+        margin: 10px;
+    }
+
+    .discount {
+        margin-top: 20px;
+        font-size: 50px;
+        color: #ddd;
+    }
+
+    .roll-extra {
+        margin-top: 50px;
+        padding: 0 10px;
+        color: #ddd;
+    }
+
+    .extras {
+        display: flex;
+        margin-bottom: 1.5rem;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .extra {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5px;
+        background-color: #333;
+        border-radius: 15px;
+        font-size: 20px;
+        flex: 1 1 150px;
+    }
+
+    .warning {
+        margin: 8px;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .item-div {
-    border: 2px solid #fff;
-    border-radius: 3.5rem;
-    width: 90%;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
+    .item-div {
+        border: 2px solid #fff;
+        border-radius: 3.5rem;
+        width: 90%;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
 
-  .item-title {
-    font-size: 2rem;
-    margin-top: 1rem;
-    margin-bottom: 10px;
-  }
+    .item-title {
+        font-size: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 10px;
+    }
 
-  .items {
-    padding: 0 5px;
-    margin-bottom: 1rem;
-  }
+    .items {
+        padding: 0 5px;
+        margin-bottom: 1rem;
+    }
 
-  .item {
-    margin: 5px 10px;
-    border: none;
-    border-radius: 50px;
-    flex: 1 1 300px;
-    padding: 15px 15px;
-  }
+    .item {
+        margin: 5px 10px;
+        border: none;
+        border-radius: 50px;
+        flex: 1 1 300px;
+        padding: 15px 15px;
+    }
 
-  .item h4 {
-    margin: 0;
-    font-style: italic;
-    font-size: 1.8rem;
-    font-weight: normal;
-    margin-bottom: .5rem;
-    color: #ddd;
-  }
-  
-  .item p {
-    font-size: 1.2rem;
-    margin: 0px;
-  }
-  
-  .bento-description {
-    color: #ddd;
-    font-size: 20px;
-    margin: 10px;
-  }
-  
-  .discount{
-    margin-top: 20px;
-    font-size: 50px;
-    color: #ddd;
-  }
-  
-  .roll-extra {
-    margin-top: 50px;
-    padding: 0 10px;
-    color: #ddd;
-  }
-  
-  .extras {
-    display: flex;
-    margin-bottom: 1.5rem;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-  
-  .extra {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 5px;
-    background-color: #333;
-    border-radius: 15px;
-    font-size: 20px;
-    flex: 1 1 150px;
-  }
+    .item h4 {
+        margin: 0;
+        font-style: italic;
+        font-size: 1.8rem;
+        font-weight: normal;
+        margin-bottom: 0.5rem;
+        color: #ddd;
+    }
 
-  .warning {
-      margin: 8px;
-  }
+    .item p {
+        font-size: 1.2rem;
+        margin: 0px;
+    }
+
+    .bento-description {
+        color: #ddd;
+        font-size: 20px;
+        margin: 10px;
+    }
+
+    .discount {
+        margin-top: 20px;
+        font-size: 50px;
+        color: #ddd;
+    }
+
+    .roll-extra {
+        margin-top: 50px;
+        padding: 0 10px;
+        color: #ddd;
+    }
+
+    .extras {
+        display: flex;
+        margin-bottom: 1.5rem;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .extra {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5px;
+        background-color: #333;
+        border-radius: 15px;
+        font-size: 20px;
+        flex: 1 1 150px;
+    }
+
+    .warning {
+        margin: 8px;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .item-div {
-    border: 2px solid #fff;
-    border-radius: 3.5rem;
-    max-width: 1300px;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
+    .item-div {
+        border: 2px solid #fff;
+        border-radius: 3.5rem;
+        max-width: 1300px;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
 
-  .item-title {
-    font-size: 2rem;
-    margin-top: 1rem;
-    margin-bottom: 10px;
-  }
+    .item-title {
+        font-size: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 10px;
+    }
 
-  .items {
-    padding: 0 5px;
-    margin-bottom: 1rem;
-  }
+    .items {
+        padding: 0 5px;
+        margin-bottom: 1rem;
+    }
 
-  .item {
-    margin: 5px 10px;
-    border: none;
-    border-radius: 50px;
-    flex: 1 1 300px;
-    padding: 15px 15px;
-  }
+    .item {
+        margin: 5px 10px;
+        border: none;
+        border-radius: 50px;
+        flex: 1 1 300px;
+        padding: 15px 15px;
+    }
 
-  .item h4 {
-    margin: 0;
-    font-style: italic;
-    font-size: 1.8rem;
-    font-weight: normal;
-    margin-bottom: .5rem;
-    color: #ddd;
-  }
-  
-  .item p {
-    font-size: 1.2rem;
-    margin: 0px;
-  }
-  
-  .bento-description {
-    color: #ddd;
-    font-size: 20px;
-    margin: 10px;
-  }
-  
-  .discount{
-    margin-top: 20px;
-    font-size: 50px;
-    color: #ddd;
-  }
-  
-  .roll-extra {
-    margin-top: 50px;
-    padding: 0 10px;
-    color: #ddd;
-  }
-  
-  .extras {
-    display: flex;
-    margin-bottom: 1.5rem;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-  
-  .extra {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 5px;
-    background-color: #333;
-    border-radius: 15px;
-    font-size: 20px;
-    flex: 1 1 150px;
-  }
+    .item h4 {
+        margin: 0;
+        font-style: italic;
+        font-size: 1.8rem;
+        font-weight: normal;
+        margin-bottom: 0.5rem;
+        color: #ddd;
+    }
 
-  .warning {
-      margin: 0 auto;
-  }
+    .item p {
+        font-size: 1.2rem;
+        margin: 0px;
+    }
+
+    .bento-description {
+        color: #ddd;
+        font-size: 20px;
+        margin: 10px;
+    }
+
+    .discount {
+        margin-top: 20px;
+        font-size: 50px;
+        color: #ddd;
+    }
+
+    .roll-extra {
+        margin-top: 50px;
+        padding: 0 10px;
+        color: #ddd;
+    }
+
+    .extras {
+        display: flex;
+        margin-bottom: 1.5rem;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .extra {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5px;
+        background-color: #333;
+        border-radius: 15px;
+        font-size: 20px;
+        flex: 1 1 150px;
+    }
+
+    .warning {
+        margin: 0 auto;
+    }
 }
