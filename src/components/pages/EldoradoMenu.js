@@ -85,8 +85,9 @@ const EldoradoMenu = () => {
         <>
             <div className="page">
                 <p className="scheduleWarning">
-                    *** For the next 5 weeks, our restaurant will be closed on
-                    Tuesdays. We appreciate your understanding. ***
+                    * For the next 5 weeks (4/9/24 to 5/9/24),
+                    <br /> Our restaurant will be closed on Tuesdays. We
+                    appreciate your understanding. *
                 </p>
                 <div id="title">El Dorado Hills</div>
 
