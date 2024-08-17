@@ -117,8 +117,8 @@ const Appetizer = (props) => {
                         "17.95"
                     ],
                     "Assorted Sashimi": [
-                        "chef's choice of today's raw fish - 12 pcs",
-                        "19.95"
+                        "chef's choice of today's raw fish - 9 pcs",
+                        "20.95"
                     ],
                     "Garlic Sashimi": [
                         "7pcs of salmon with fried garlic special sauce",
